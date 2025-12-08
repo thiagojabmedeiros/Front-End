@@ -1,0 +1,54 @@
+body {
+    background-image: url(../Página_de_Receita/assets/bg-image.png);
+    background-size: cover;
+    background-color: rgb(33, 12, 12);
+}
+
+#page {
+    box-sizing: border-box;
+    width: 800px;
+    padding: 24px;
+    background-color: #F0E8C2;
+    border-radius: 16px;
+    margin: 48px auto;
+}
+
+:root {
+  font-family: "Alice", serif;
+  line-height: 150%;
+  color: #573A37 ;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+main {
+    padding: 24px;
+}
+
+#about p + p {
+    margin-top: 12px;
+}
+
+section + section {
+    margin-top: 24px;
+}
+
+h1, h2 {
+    margin-bottom: 4px;
+}
+
+ul {
+    padding-left: 24px;
+}
+
+h1 + div {
+    margin-top: 4px;
+}
+
+footer {
+    text-align: center;
+    padding-bottom: 48px;
+}
