@@ -1,0 +1,17 @@
+.container {
+    border: 1px dashed;
+    display: flex;
+    flex-direction: column;
+}
+
+.item {
+    width: 20px;
+    --hue: 0;
+    border: 1px solid;
+    text-align: center;
+    background-color: hsl(var(--hue), 100%, 70%);   
+}
+
+.item:nth-child(5) {
+    flex-grow: 2;
+}
