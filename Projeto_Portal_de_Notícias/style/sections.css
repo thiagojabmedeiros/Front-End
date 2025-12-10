@@ -42,9 +42,9 @@
 #weekly {   
     header{
         margin-top: 60px;
-        display: grid;
-        grid-auto-flow: column;
-        justify-content: center;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
         
     }
 
@@ -57,4 +57,5 @@
     display: grid;
     grid-auto-flow: column;
     margin-top: 20px;
+    border: 1px white;
 }
