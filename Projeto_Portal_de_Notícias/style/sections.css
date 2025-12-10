@@ -39,3 +39,22 @@
     
 }
 
+#weekly {   
+    header{
+        margin-top: 60px;
+        display: grid;
+        grid-auto-flow: column;
+        justify-content: center;
+        
+    }
+
+    img {
+        height: 160px;
+    }
+}
+
+#maislidas {
+    display: grid;
+    grid-auto-flow: column;
+    margin-top: 20px;
+}
