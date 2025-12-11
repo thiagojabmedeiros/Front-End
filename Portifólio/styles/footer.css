@@ -1,0 +1,45 @@
+.roxo {
+    color: var(--purple);
+}
+
+.textomedio {
+    font: var(--text-md);
+    color: var(--gray-200);
+    text-align: center;
+    margin-top: -40px;
+    margin-bottom: 48px;
+}
+
+.redes {
+    padding-bottom: 60px;
+    display: grid;
+    grid-area: 
+    "A"
+    "A"
+    "A"
+    ;
+    justify-content: center;    
+}
+
+.card {
+    grid-area: A;
+    display: flex;
+    align-items: center;
+    font: var(--text-md);
+    color: var(--gray-200);
+    width: 400px;
+    height: 68px;
+    background-color: var(--gray-400);
+    margin-block: 10px;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+    gap: 12px;
+    
+    img {
+        margin-left: 20px;
+    }
+}
+
+.card:hover {
+    transform: scale(1.01);
+}

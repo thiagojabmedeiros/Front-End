@@ -11,6 +11,11 @@
     color: var(--gray-100);
 }
 
+#meusserviços {
+    background-color: var(--gray-600);
+    margin-top: -130px;
+    padding-bottom: 120px;
+}
 
 #projetos {
     display: grid;
@@ -34,6 +39,37 @@
         transform: scale(1.01);
     }
 }
+
+#serviços {
+    display: grid;
+    grid-template-areas: 
+    "A A A"
+    "A A A"
+    ;
+    justify-content: center;
+    
+    gap: 20px;
+
+    div {
+        width: 280px;
+        height: 155px;
+        border-radius: 20px;
+        background-color: var(--gray-500);
+        transition: transform 0.2s ease-in-out;
+        border: 1px solid var(--gray-400);
+    }
+
+    div:hover {
+        transform: scale(1.01);
+    }
+
+    img {
+        margin-top: 10px;
+        margin-left:10px;
+    }
+}
+
+
 
 .tituloprojeto {
     display:flex;
