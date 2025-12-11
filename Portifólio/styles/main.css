@@ -15,8 +15,8 @@
 #projetos {
     display: grid;
     grid-template-areas: 
-    "A B C"
-    "D E F"
+    "A A A"
+    "A A A"
     ;
 
     gap: 20px;
@@ -27,17 +27,26 @@
         height: 280px;
         border-radius: 20px;
         background-color: var(--gray-400);
+        transition: transform 0.2s ease-in-out;
+    }
+
+    div:hover {
+        transform: scale(1.01);
     }
 }
 
 .tituloprojeto {
+    display:flex;
+    justify-content: space-between;
     margin-top: 16px;
     margin-left: 12px;
+    margin-right: 24px;
     font: var(--title-sm);
     color: var(--gray-100);
 }
 
 .descricaoprojeto {
+    margin-top: 10px;
     margin-left: 12px;
     font: var(--text-sm);
     color: var(--gray-200);
