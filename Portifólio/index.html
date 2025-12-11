@@ -1,17 +1,101 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <!--referência fontes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="..\Portifólio\styles\index.css">
+    
+    <!--fontes-->
+    <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap" rel="stylesheet">
+
 
     <title>Portifólio</title>
 </head>
 
 <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header>
+        <div class="container" style="padding-top: 120px;">
+            <div id="fotodeperfil">
+                <img src="..\Portifólio\assets\images\Thiago.png" alt="Thiago Medeiros">
+                <img src="..\Portifólio\assets\icons\Vector.svg">
+            </div>
+
+            <div class="subtítulo">
+                <p class="cinza">"Hello, World!" Me chamo</p>
+                <p class="vermelho">Thiago Medeiros</p> 
+                <p class="cinza">e sou: </p>
+            </div>
+
+            <div id="título">
+                <p>Engenheiro de Software</p>
+            </div>
+
+            <div id="descrição">
+                <p>Transformo necessidades em aplicações reais, evolventes e funcionais. Desenvolvo sistemas através da minha paixão pela tecnologia, contribuindo com soluções inovadoras e eficazes para desafios complexos.</p>
+            </div>
+
+            <div id="minhasredes"> 
+                <h3>Ferramentas que usei e uso em meus projetos:</h3>
+            </div>
+
+            <div class="ferramentas">
+                <div class="box"><img src="..\Portifólio\assets\icons\html.svg">HTML</div>
+                <div class="box"><img src="..\Portifólio\assets\icons\css.svg">CSS</div>
+                <div class="box"><img src="..\Portifólio\assets\icons\javascript.svg">JavaScript</div>
+                <div class="box"><img src="..\Portifólio\assets\icons\react.svg">React</div>
+                <div class="box"><img src="..\Portifólio\assets\icons\node.svg">Node.js</div>
+            </div>
+
+            <div id="minhasredes"> 
+                <h3>Minhas Redes:</h3>
+            </div>
+
+            <div class="ferramentas">
+                <a href="https://github.com/thiagojabmedeiros" style="text-decoration: none;"><div class="box"><img src="..\Portifólio\assets\icons\github.svg">GitHub</div></a>
+                <a href="https://www.linkedin.com/in/thiagojabmedeiros/"  style="text-decoration: none;"><div class="box"><img src="..\Portifólio\assets\icons\linkedin.svg" style="width: 20px; height: auto;">LinkedIn</div></a>
+                <a href="https://www.instagram.com/thiagojabm/"  style="text-decoration: none;"><div class="box"><img src="..\Portifólio\assets\icons\instagram.svg" style="width: 20px; height: auto;">Instagram</div></a>
+            </div>
+
+            <div class="seta"><a href="#projetos"><img src="..\Portifólio\assets\icons\arrow.svg"></a></div>
+        </div>
+
+    </header>
+
+    <main>
+        <div class="container">
+
+            <div class="subtítulo">
+                <p class="vermelho">Meus projetos:</p>
+            </div>
+            <div class="títulomd">
+                <p class="cinzaclaro">Veja os meus detaques</p>
+            </div>
+
+            <div id="projetos">
+                <div>
+                    <img class="imagemprojeto" src="..\Portifólio\assets\thumbnails\Thumbnail_Project-06.png">
+                    <p class="tituloprojeto">Help David!</p>
+                    <p class="descricaoprojeto">Ajude o professor do CS50X, David J. Malan, a recuperar seus materias de estudo e aula...</p>
+                </div>
+
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
 </body>
 
 </html>

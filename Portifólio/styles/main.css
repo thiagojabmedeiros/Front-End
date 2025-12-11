@@ -1,0 +1,52 @@
+.títulomd {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 56px;
+    font: var(--title-md);
+}
+
+.cinzaclaro {
+    color: var(--gray-100);
+}
+
+
+#projetos {
+    display: grid;
+    grid-template-areas: 
+    "A B C"
+    "D E F"
+    ;
+
+    gap: 20px;
+    justify-content: center;
+
+    div {
+        width: 330px;
+        height: 280px;
+        border-radius: 20px;
+        background-color: var(--gray-400);
+    }
+}
+
+.tituloprojeto {
+    margin-top: 16px;
+    margin-left: 12px;
+    font: var(--title-sm);
+    color: var(--gray-100);
+}
+
+.descricaoprojeto {
+    margin-left: 12px;
+    font: var(--text-sm);
+    color: var(--gray-200);
+}
+
+.imagemprojeto {
+    width: 306px; 
+    height: 156px; 
+    border-radius: 12px;
+    margin-top: 12px;
+    margin-inline: 12px;
+}
