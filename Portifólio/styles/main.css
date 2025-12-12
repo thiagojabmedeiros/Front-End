@@ -43,8 +43,7 @@
 #serviços {
     display: grid;
     grid-template-areas: 
-    "A A A"
-    "A A A"
+    "A A "
     ;
     justify-content: center;
     

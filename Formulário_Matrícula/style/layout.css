@@ -1,0 +1,41 @@
+#app {
+    display: grid;
+    grid-template-columns: 51.25% 48.75%;
+
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+aside {
+    padding: 64px;
+    background-color: var(--surface-secondary);
+    
+
+    h1 {
+        font: var(--heading1);
+    }
+    span {
+        color: var(--brand-dark);
+    }
+    p {
+        font: var(--heading4);
+        color: var(--text-secondary);
+        margin-top: 8px;
+        margin-bottom: 32px;
+    }
+    
+
+    
+}
+
+.aside-container {
+        max-height: 100px;
+        max-width: 496px;
+}
+
+#ilustração {
+    width: 496px;
+    height: 368px;
+    margin-bottom: 124px;
+}
