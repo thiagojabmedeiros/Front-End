@@ -33,8 +33,23 @@ main {
 }
 
 form {
+    margin-top: 30px;
+}
+
+fieldset {
+    border: none;
+    display: grid;
+    gap: 15px;
+}
+
+legend {
+    font: var(--heading4);
+    color: var(--text-primary);
+    margin-top: 15px;
+}
+
+.input-wrapper{
     label {
-        font: var(--text-secondary);
-        
+        font: var(--heading5);
     }
 }

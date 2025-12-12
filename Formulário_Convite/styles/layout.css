@@ -1,0 +1,28 @@
+#app {
+    display: grid;
+    grid-template-columns: 31.25% 68.75%;
+
+    height: 100vh;
+    overflow: hidden;
+
+    background-color: var(--shape-background);
+}
+
+aside {
+    margin: 20px 10px 20px 20px;
+    background-image: url(/Formulário_Convite/assets/images/Background.png);
+    background-size: cover;
+    background-position: relative;
+    padding: 32px;
+    border-radius: 12px;
+    
+    & h1 {
+        font: var(--logo);
+        color: var(--pink);
+    }
+
+    & p {
+        font: var(--body-md);
+        color: var(--text-heading);
+    }
+}
