@@ -42,14 +42,14 @@
 
     /* Fontes */
     --font-family-leckerli: "Leckerli One", cursive;
-    --logo: 400 40px/auto var(--font-family-leckerli);
+    --logo: 400 40px var(--font-family-leckerli);
 
     --font-family-baloo: "Baloo 2", sans-serif;
-    --heading-md: 700 28px/auto var(--font-family-baloo);
-    --heading-sm: 700 18px/auto var(--font-family-baloo);
+    --heading-md: 700 28px/120% var(--font-family-baloo);
+    --heading-sm: 700 18px/120% var(--font-family-baloo);
 
     --font-family-opensans: "Open Sans", sans-serif;
-    --body-md: 400 16px/auto var(--font-family-opensans);
-    --body-sm: 400 14px/auto var(--font-family-opensans);
+    --body-md: 400 16px/120% var(--font-family-opensans);
+    --body-sm: 400 14px/120% var(--font-family-opensans);
     --body-xs: 400 12px/auto var(--font-family-opensans);
 }

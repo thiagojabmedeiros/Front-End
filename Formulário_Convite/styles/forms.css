@@ -1,0 +1,33 @@
+main {
+    margin: 20px 20px 20px 10px;
+    background-color: var(--shape-body);
+    border-radius: 12px;
+}
+
+.main-container {
+    padding-inline: 130px;
+    padding-top: 80px;
+
+    h1 {
+        font: var(--heading-md);
+        color: var(--text-heading);
+        margin-bottom: 40px;
+    }
+
+    .fototexto {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 12px;
+        h2 {
+            font: var(--heading-sm);
+            color: var(--text-heading);
+        }  
+    }
+
+    p {
+        font: var(--body-sm);
+        color: var(--text-body);
+    }
+
+}

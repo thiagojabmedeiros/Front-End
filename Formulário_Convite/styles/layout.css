@@ -15,14 +15,19 @@ aside {
     background-position: relative;
     padding: 32px;
     border-radius: 12px;
-    
-    & h1 {
+
+}
+
+.aside-container {
+
+    h1 {
         font: var(--logo);
         color: var(--pink);
     }
 
-    & p {
+    p {
         font: var(--body-md);
-        color: var(--text-heading);
+        color: var(--text-body);
     }
 }
+
