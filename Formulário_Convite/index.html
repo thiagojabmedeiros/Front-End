@@ -25,12 +25,116 @@
         <main class="main-container">
             <h1>Crie seu convite</h1>
 
-            <div class="fototexto"> 
-                <img src="..\Formulário_Convite\assets\icones\calendar.svg" alt="icone" style="width: 24px; height: 24px;">
-                <h2>Sobre o evento</h2>
-            </div>
+            <form enctype="multipart/form-data" method="post">
+                <fieldset class="form-info">
 
-            <p>Título</p>
+                    <div class="fototexto"> 
+                        <img src="..\Formulário_Convite\assets\icones\calendar.svg" alt="icone" style="width: 24px; height: 24px;">
+                        <h2>Sobre o evento</h2>
+                    </div>
+
+                    <div class="input-wrapper">
+                        <p><label for="titulo">Título</label></p>
+                        <input id="titulo" name="titulo" type="text" placeholder="Nome do Evento">
+                    </div>
+                    
+                    <div class="input-date">
+                        <div>
+                            <p><label for="inicio">Início</label></p>
+                            <input id="inicio" type="date">
+                        </div>
+
+                        <div>
+                            <p><label for="fim">Fim</label></p>
+                            <input id="fim" type="date">
+                        </div>
+                    </div>
+
+                    <div class="input">
+                        <div>
+                            <label for="tipo"><p>Tipo</p></label>
+                                <div id="tipo">
+                                    <input id="presencial" type="radio" name="tipo" value="presencial">
+                                    <label for="presencial">Presencial</label>
+                                    <input id="on-line" type="radio" name="tipo" value="on-line">
+                                    <label for="on-line">On-line</label>
+                                </div>
+                        </div>
+
+                        <div>
+                            <p><label for="local">Local</label></p>
+                            <input id="local" name="local" type="text"  placeholder="Link ou endereço">
+                        </div>
+                    </div>
+
+                    <div class="textarea-wrapper">
+                        <p><label for="descricao">Descrição</label></p>
+                        <hr style="border: none;">
+                        <textarea id="descricao" name="descricao" type="text" placeholder="Escreva os detalhes sobre o evento"></textarea>
+                    </div>
+
+                    <div class="fototexto"> 
+                        <img src="..\Formulário_Convite\assets\icones\paintbrush-vertical.svg" alt="icone" style="width: 24px; height: 24px;">
+                        <h2>Personalização</h2>
+                    </div>
+
+                    <div class="drop-area">
+                        <div>
+                            <p><label for="tom">Estilo</label></p>
+                            <input id="presencial" type="radio" name="tipo" value="presencial">
+                            <input id="on-line" type="radio" name="tipo" value="on-line">
+                            <label for="on-line">Escuro</label>
+                        </div>
+                        
+                        <div>
+                            <p><label for="capa">Foto de capa</label></p>
+                            <div>
+                                <img src="..\Formulário_Convite\assets\icones\upload.svg" style="width: 16px; height: 16px;">
+                                <input type="file" id="capa" name="foto" placeholder="Selecionar">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="fototexto"> 
+                        <img src="..\Formulário_Convite\assets\icones\contact.svg" alt="icone" style="width: 24px; height: 24px;">
+                        <h2>Dados para contato</h2>
+                    </div>
+
+                    <div class="input-wrapper">
+                        <p><label for="nome">Nome</label></p>
+                        <input id="nome" name="nome" type="text" placeholder="Nome completo">
+                    </div>
+
+                    <div class="input-dados">
+                        <div>
+                            <p><label for="email">E-mail</label></p>
+                            <input id="email" name="email" type="text" placeholder="exemplo@email.com">
+                        </div>
+
+                        <div>
+                            <p><label for="telefone">Telefone</label></p>
+                            <input id="telefone" name="telefone" type="text" placeholder="(99) 9 9999-9999">
+                        </div>
+                    </div>
+
+                    <div class="select-input">
+                        <input id="termos" type="checkbox">
+                        <label for="termos">Li e concordo com os <a href="#" style="color: var(--brand-dark); font: var(--body-sm);">Termos e Condições</a> e com a <a href="#" style="color: var(--brand-dark); font: var(--body-sm);">Política de Privacidade</a></label>
+                        <hr style="border: none;">
+                        <input id="promoemail" type="checkbox">
+                        <label for="promoemail">Aceito receber atualizações e promoções por e-mail</label>
+                        <hr style="border: none;">
+                        <input id="promosms" type="checkbox">
+                        <label for="promosms">Aceito receber atualizações e promoções por SMS</label>                       
+                    </div>
+
+                    <div class="botao">
+                        <button type="submit"><img src="..\Formulário_Convite\assets\icones\ticket.svg">Gerar convite</button>
+                    </div>
+
+                </fieldset>
+            </form>
+
         </main>
     </div>
 </body>

@@ -49,6 +49,7 @@
     --heading-sm: 700 18px/120% var(--font-family-baloo);
 
     --font-family-opensans: "Open Sans", sans-serif;
+    --body-hg: 400 18px/120% var(--font-family-opensans);
     --body-md: 400 16px/120% var(--font-family-opensans);
     --body-sm: 400 14px/120% var(--font-family-opensans);
     --body-xs: 400 12px/auto var(--font-family-opensans);

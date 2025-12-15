@@ -14,6 +14,12 @@ main {
         margin-bottom: 40px;
     }
 
+    .form-info {
+        display: grid;
+        gap: 12px;
+        border: none;
+    }
+
     .fototexto {
         display: flex;
         align-items: center;
@@ -30,4 +36,165 @@ main {
         color: var(--text-body);
     }
 
+    label {
+        font: var(--body-sm);
+        color: var(--text-body);
+    }
+}
+
+.botao {
+
+    button {
+        font: var(--body-md);
+        color: var(--text-heading);
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 12px;
+        background-color: var(--brand-dark);
+        width: 177px;
+        height: 48px;
+        border-radius: 8px;
+        padding-inline: 20px;
+        padding-block: 14px;
+    }
+}
+
+.textarea-wrapper {
+    p {
+        margin-bottom: 12px;
+    }
+
+    textarea {
+        color: var(--text-body);
+        background-color: var(--input-base);
+        border: 1px solid var(--input-stroke);
+        border-radius: 8px;
+        font: var(--body-md);
+        padding: 16px;
+        width: 560px;
+        height: 136px;
+    }
+}
+
+.input {
+    display: flex;
+    gap: 16px;
+    
+    p {
+        margin-bottom: 12px;
+    }
+
+    #tipo {
+        width: 272px;
+        height: 48px;
+        border-radius: 8px;
+        border: 1px solid var(--input-stroke);
+        color: var(--text-body);
+        background-color: var(--input-base);
+        font: var(--body-md);
+        padding-inline: 16px;
+        padding-block: 13px;
+
+
+    }
+
+    #local {
+        width: 272px;
+        height: 48px;
+        border-radius: 8px;
+        border: 1px solid var(--input-stroke);
+        color: var(--text-body);
+        background-color: var(--input-base);
+        font: var(--body-md);
+        padding-inline: 16px;
+        padding-block: 13px;
+    }
+}
+
+.input-date {
+    display: flex;
+    gap: 16px;
+    
+    p {
+        margin-bottom: 12px;
+    }
+
+    #inicio, #fim {
+        width: 272px;
+        height: 48px;
+        border-radius: 8px;
+        border: 1px solid var(--input-stroke);
+        color: var(--text-body);
+        background-color: var(--input-base);
+        font: var(--body-md);
+        padding-inline: 16px;
+        padding-block: 13px;
+    }
+}
+
+.input-wrapper {
+    p {
+        margin-bottom: 12px;
+    }
+
+    #titulo {
+        width: 560px;
+        height: 48px;
+        border-radius: 8px;
+        border: 1px solid var(--input-stroke);
+        color: var(--text-body);
+        background-color: var(--input-base);
+        font: var(--body-md);
+        padding-inline: 16px;
+        padding-block: 13px;
+    }
+
+    #nome {
+        width: 560px;
+        height: 48px;
+        border-radius: 8px;
+        border: 1px solid var(--input-stroke);
+        color: var(--text-body);
+        background-color: var(--input-base);
+        font: var(--body-md);
+        padding-inline: 16px;
+        padding-block: 13px;
+    }
+}
+
+.input-dados {
+    display: flex;
+    gap: 16px;
+    
+    p {
+        margin-bottom: 12px;
+    }
+
+    #email, #telefone {
+        width: 272px;
+        height: 48px;
+        border-radius: 8px;
+        border: 1px solid var(--input-stroke);
+        color: var(--text-body);
+        background-color: var(--input-base);
+        font: var(--body-md);
+        padding-inline: 16px;
+        padding-block: 13px;
+    }
+}
+
+.drop-area {
+    display: flex;
+    gap: 16px; 
+
+    p {
+        margin-bottom: 12px;
+    }  
+
+    #capa {
+        
+        font: var(--body-md);
+        color: var(--input-placeholder);
+    }
 }
