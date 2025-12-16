@@ -191,6 +191,7 @@ button:hover {
         font: var(--body-md);
         padding-inline: 16px;
         padding-block: 13px;
+        
     }
 }
 
@@ -283,4 +284,31 @@ input[type="text"]:focus, input[type="date"]:focus, textarea:focus {
     outline: 1px solid var(--brand-dark);
     border: 2px solid var(--brand-light);
     outline-offset: .1px;
+
+}
+
+.error {
+    display: none;
+    align-content: center;
+    margin-top: 12px;
+    gap: 12px;
+
+    img {
+        width: 16px;
+        height: 16px;
+    }
+    p {
+        font: var(--body-sm);
+        color: var(--danger);
+    }
+}
+
+
+
+input:invalid + .error{
+    display: flex;
+    
+    &:invalid {
+        border: 1px solid var(--danger)
+    }
 }
