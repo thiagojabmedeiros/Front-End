@@ -35,18 +35,18 @@
 
                     <div class="input-wrapper">
                         <p><label for="titulo">Título</label></p>
-                        <input id="titulo" name="titulo" type="text" placeholder="Nome do Evento">
+                        <input id="titulo" name="titulo" type="text" placeholder="Nome do Evento" required>
                     </div>
                     
                     <div class="input-date">
                         <div>
                             <p><label for="inicio">Início</label></p>
-                            <input id="inicio" type="date">
+                            <input id="inicio" type="date" required>
                         </div>
 
                         <div>
                             <p><label for="fim">Fim</label></p>
-                            <input id="fim" type="date">
+                            <input id="fim" type="date" required>
                         </div>
                     </div>
 
@@ -54,23 +54,23 @@
                         <div>
                             <label for="tipo"><p>Tipo</p></label>
                                 <div id="tipo">
-                                    <input id="presencial" type="radio" name="tipo" value="presencial">
+                                    <input id="presencial" type="radio" name="tipo" value="presencial" required>
                                     <label for="presencial">Presencial</label>
-                                    <input id="on-line" type="radio" name="tipo" value="on-line">
+                                    <input id="on-line" type="radio" name="tipo" value="on-line" required>
                                     <label for="on-line">On-line</label>
                                 </div>
                         </div>
 
                         <div>
                             <p><label for="local">Local</label></p>
-                            <input id="local" name="local" type="text"  placeholder="Link ou endereço">
+                            <input id="local" name="local" type="text"  placeholder="Link ou endereço" required>
                         </div>
                     </div>
 
                     <div class="textarea-wrapper">
                         <p><label for="descricao">Descrição</label></p>
                         <hr style="border: none;">
-                        <textarea id="descricao" name="descricao" type="text" placeholder="Escreva os detalhes sobre o evento"></textarea>
+                        <textarea id="descricao" name="descricao" type="text" placeholder="Escreva os detalhes sobre o evento" required></textarea>
                     </div>
 
                     <div class="fototexto"> 
@@ -78,11 +78,93 @@
                         <h2>Personalização</h2>
                     </div>
 
+                    <div class="input-cores">
+                        <p style="margin-bottom: 16px;"><label for="cores">Cor principal</label></p>
+                        <div id="cores" style="width: 560px; height: 40px;">
+                            
+                            <input id="azulclaro" type="hidden" name="cores" value="azulclaro" style="margin-left: 20px;">
+                            <label for="azulclaro"></label>
+                            
+                            <input id="roxoescuro" type="hidden" name="cores" value="roxoescuro">
+                            <label for="roxoescuro"></label>
+                            
+                            <input id="roxo" type="hidden" name="cores" value="roxo">
+                            <label for="roxo"></label>
+                            
+                            <input id="rosa" type="hidden" name="cores" value="rosa">
+                            <label for="rosa"></label>
+                            
+                            <input id="laranja" type="hidden" name="cores" value="laranja">
+                            <label for="laranja"></label>
+                            
+                            <input id="amarelo" type="hidden" name="cores" value="amarelo">
+                            <label for="amarelo"></label>
+                            
+                            <input id="limao" type="hidden" name="cores" value="limao">
+                            <label for="limao"></label>
+                            
+                            <input id="verde" type="hidden" name="cores" value="verde">
+                            <label for="verde"></label>
+                            
+                            <input id="ciano" type="hidden" name="cores" value="ciano">
+                            <label for="ciano"></label>
+
+                            <input id="navy" type="hidden" name="cores" value="navy">
+                            <label for="navy"></label>
+
+                        </div>
+                    </div>
+
+                    <div class="input-tema">
+                        <p style="margin-bottom: 16px;"><label for="tema">Tema do evento</label></p>
+
+                        <div class="tema">
+                            <input id="aniversario" type="hidden" name="tema" value="aniversario">
+                            <label for="aniversario"><img src="..\Formulário_Convite\assets\thumbnail\Image.svg"><p>Aniversário</p></label>
+                            
+                            <input id="infantil" type="hidden" name="tema" value="infantil">
+                            <label for="infantil"><img src="..\Formulário_Convite\assets\thumbnail\Image (1).svg"><p>Infantil</p></label>
+
+                            <input id="formatura" type="hidden" name="tema" value="formatura">
+                            <label for="formatura"><img src="..\Formulário_Convite\assets\thumbnail\Image (2).svg"><p>Formatura</p></label>
+
+                            <input id="casamento" type="hidden" name="tema" value="casamento">
+                            <label for="casamento"><img src="..\Formulário_Convite\assets\thumbnail\Image (3).svg"><p>Casamento</p></label>
+                        </div>
+
+                        <div class="tema">
+                            <input id="chadebebe" type="hidden" name="tema" value="cha de bebe">
+                            <label for="chadebebe"><img src="..\Formulário_Convite\assets\thumbnail\Image (4).svg"><p>Chá de bebê</p></label>
+                            
+                            <input id="chadepanela" type="hidden" name="tema" value="cha de panela">
+                            <label for="chadepanela"><img src="..\Formulário_Convite\assets\thumbnail\Image (5).svg"><p>Chá de panela</p></label>
+
+                            <input id="carnaval" type="hidden" name="tema" value="carnaval">
+                            <label for="carnaval"><img src="..\Formulário_Convite\assets\thumbnail\Image (6).svg"><p>Carnaval</p></label>
+
+                            <input id="pascoa" type="hidden" name="tema" value="pascoa">
+                            <label for="pascoa"><img src="..\Formulário_Convite\assets\thumbnail\Image (7).svg"><p>Páscoa</p></label>
+                        </div>
+                        <div class="tema">
+                            <input id="saojoao" type="hidden" name="tema" value="sao joao">
+                            <label for="saojoao"><img src="..\Formulário_Convite\assets\thumbnail\Image (8).svg"><p>São João</p></label>
+                            
+                            <input id="Halloween" type="hidden" name="tema" value="Halloween">
+                            <label for="Halloween"><img src="..\Formulário_Convite\assets\thumbnail\Image (9).svg"><p>Halloween</p></label>
+
+                            <input id="Natal" type="hidden" name="tema" value="Natal">
+                            <label for="Natal"><img src="..\Formulário_Convite\assets\thumbnail\Image (10).svg"><p>Natal</p></label>
+
+                            <input id="outro" type="hidden" name="tema" value="outro">
+                            <label for="outro"><img src="..\Formulário_Convite\assets\thumbnail\Image (11).svg"><p>Outro</p></label>
+                        </div>
+                    </div>
+
                     <div class="drop-area">
                         <div>
                             <p><label for="tom">Estilo</label></p>
-                            <input id="presencial" type="radio" name="tipo" value="presencial">
-                            <input id="on-line" type="radio" name="tipo" value="on-line">
+                            <input id="presencial" type="radio" name="tipo" value="presencial" required>
+                            <input id="on-line" type="radio" name="tipo" value="on-line" required>
                             <label for="on-line">Escuro</label>
                         </div>
                         
@@ -102,13 +184,13 @@
 
                     <div class="input-wrapper">
                         <p><label for="nome">Nome</label></p>
-                        <input id="nome" name="nome" type="text" placeholder="Nome completo">
+                        <input id="nome" name="nome" type="text" placeholder="Nome completo" required>
                     </div>
 
                     <div class="input-dados">
                         <div>
                             <p><label for="email">E-mail</label></p>
-                            <input id="email" name="email" type="text" placeholder="exemplo@email.com">
+                            <input id="email" name="email" type="text" placeholder="exemplo@email.com" required>
                         </div>
 
                         <div>
@@ -118,7 +200,7 @@
                     </div>
 
                     <div class="select-input">
-                        <input id="termos" type="checkbox">
+                        <input id="termos" type="checkbox" required>
                         <label for="termos">Li e concordo com os <a href="#" style="color: var(--brand-dark); font: var(--body-sm);">Termos e Condições</a> e com a <a href="#" style="color: var(--brand-dark); font: var(--body-sm);">Política de Privacidade</a></label>
                         <hr style="border: none;">
                         <input id="promoemail" type="checkbox">
@@ -129,7 +211,7 @@
                     </div>
 
                     <div class="botao">
-                        <button type="submit"><img src="..\Formulário_Convite\assets\icones\ticket.svg">Gerar convite</button>
+                        <button type="submit"><img src="..\Formulário_Convite\assets\icones\ticket.svg" style="width: 20px; height: 20px;">Gerar convite</button>
                     </div>
 
                 </fieldset>
