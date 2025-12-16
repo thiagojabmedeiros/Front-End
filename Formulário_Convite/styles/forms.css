@@ -1,12 +1,15 @@
+
 main {
     margin: 20px 20px 20px 10px;
     background-color: var(--shape-body);
     border-radius: 12px;
+    
 }
 
 .main-container {
     padding-inline: 130px;
     padding-top: 80px;
+    overflow: auto;
 
     h1 {
         font: var(--heading-md);
@@ -209,7 +212,7 @@ button:hover {
 .input-cores {
     #cores {
         display: flex;
-        gap: 38px;
+        gap: 12px;
         
         #azulclaro + label {
             background-color: var(--brand-light);
@@ -217,10 +220,7 @@ button:hover {
             height: 40px;
             border: 4px solid var(--shape-button);
             border-radius: 50%;
-            position: absolute;
             transition: transform 0.2s ease-in-out;
-            gap: 12px;
-            
         }
         #roxoescuro + label {
             background-color: var(--purple);
@@ -228,10 +228,7 @@ button:hover {
             height: 40px;
             border: 4px solid var(--shape-button);
             border-radius: 50%;
-            position: absolute;
-            margin-left: 52px;
             transition: transform 0.2s ease-in-out;
-            gap: 12px;
         }
         #roxo + label {
             background-color: var(--fuschia);
@@ -239,10 +236,7 @@ button:hover {
             height: 40px;
             border: 4px solid var(--shape-button);
             border-radius: 50%;
-            position: absolute;
-            margin-left: 104px;
             transition: transform 0.2s ease-in-out;
-            gap: 12px;
         }
         #rosa + label {
             background-color: var(--pink);
@@ -250,10 +244,7 @@ button:hover {
             height: 40px;
             border: 4px solid var(--shape-button);
             border-radius: 50%;
-            position: absolute;
-            margin-left: 156px;
             transition: transform 0.2s ease-in-out;
-            gap: 12px;
         }
         #laranja + label {
             background-color: var(--orange);
@@ -261,10 +252,7 @@ button:hover {
             height: 40px;
             border: 4px solid var(--shape-button);
             border-radius: 50%;
-            position: absolute;
-            margin-left: 208px;
             transition: transform 0.2s ease-in-out;
-            gap: 12px;
         }
         #amarelo + label {
             background-color: var(--yellow);
@@ -272,10 +260,7 @@ button:hover {
             height: 40px;
             border: 4px solid var(--shape-button);
             border-radius: 50%;
-            position: absolute;
-            margin-left: 260px;
             transition: transform 0.2s ease-in-out;
-            gap: 12px;
         }
         #limao + label {
             background-color: var(--lime);
@@ -283,10 +268,7 @@ button:hover {
             height: 40px;
             border: 4px solid var(--shape-button);
             border-radius: 50%;
-            position: absolute;
-            margin-left: 312px;
             transition: transform 0.2s ease-in-out;
-            gap: 12px;
         }
         #verde + label {
             background-color: var(--green);
@@ -294,10 +276,7 @@ button:hover {
             height: 40px;
             border: 4px solid var(--shape-button);
             border-radius: 50%;
-            position: absolute;
-            margin-left: 364px;
             transition: transform 0.2s ease-in-out;
-            gap: 12px;
         }
         #ciano + label {
             background-color: var(--cyan);
@@ -305,10 +284,7 @@ button:hover {
             height: 40px;
             border: 4px solid var(--shape-button);
             border-radius: 50%;
-            position: absolute;
-            margin-left: 416px;
             transition: transform 0.2s ease-in-out;
-            gap: 12px;
         }
         #navy + label {
             background-color: var(--navy);
@@ -316,10 +292,7 @@ button:hover {
             height: 40px;
             border: 4px solid var(--shape-button);
             border-radius: 50%;
-            position: absolute;
-            margin-left: 468px;
             transition: transform 0.2s ease-in-out;
-            gap: 12px;
         }
 
         label:hover {
@@ -372,4 +345,8 @@ input:focus, select:focus, textarea:focus {
     outline: 1px solid var(--brand-dark);
     border: 2px solid var(--brand-light);
     outline-offset: .1px;
+
+    label {
+        border: 2px solid var(--brand-light);
+    }
 }
