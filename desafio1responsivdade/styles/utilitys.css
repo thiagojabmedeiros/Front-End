@@ -58,6 +58,10 @@
     width: 18.5rem;
     height: 11.375rem;
 }
+.sizeinfo2 {
+    width: 17.5rem;
+    height: 6.5rem;
+}
 
 @media (width >= 80rem) {
     .desktop-only {
@@ -74,5 +78,9 @@
         height: 10.5rem;
         padding-left: var(--px-lg);
         padding-top: 1rem;
+    }
+    .sizeinfo2 {
+        width: 17.5rem;
+        height: 6.5rem;
     }
 }
