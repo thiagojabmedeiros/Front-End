@@ -1,0 +1,7 @@
+header {
+    border: solid red;
+}
+
+header > div {
+    border: dashed black;
+}

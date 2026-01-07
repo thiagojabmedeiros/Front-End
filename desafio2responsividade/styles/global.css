@@ -1,0 +1,104 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    
+    font: inherit;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+    /*cores*/
+    --brand-color-light: #60A5FA;
+    --brand-color-dark: #1D4ED8;
+    --background-color: #0F172A;
+    --stroke-color: #1E293B;
+    --text-color-primary: #F1F5F9;
+    --text-color-secondary: #CBD5E1;
+
+    /*fonte*/
+    --ff-archivo: "Archivo", sans-serif;
+
+    /*pesos da fonte*/
+    --fw-x-bold: 800;
+    --fw-sm-bold: 600;
+    --fw-regular: 400;
+
+    /*tamanho da fonte*/
+    --fs-lg: 24px;
+    --fs-md: 16px;
+    --fs-sm: 14px;
+
+    /*paddings eixo x*/
+    --px-sm: 16px;
+    
+    /*paddings eixo y*/
+    --py-sm: 14px;
+    --py-md: 16px;
+    --py-lg: 16px;
+}
+
+h1, h2, h3, span, p {
+    font-family: var(--ff-archivo);
+}
+
+h1 {
+    font-size: var(--fs-lg);
+    font-weight: var(--fw-x-bold);
+    line-height: 1.35;
+}
+
+h2 {
+    font-size: var(--fs-md);
+    font-weight: var(--fw-x-bold);
+    line-height: 1.4;
+}
+
+h3 {
+    font-size: var(--fs-sm);
+    font-weight: var(--fw-x-bold);
+    line-height: 1.4;
+}
+
+span {
+    font-size: var(--fs-sm);
+    font-weight: var(--fw-sm-bold);
+    line-height: 1.45;
+}
+
+p {
+    font-size: var(--fs-sm);
+    font-weight: var(--fw-regular);
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    background-color: var();
+}
+
+.desktop-only {
+    display: none;
+}
+
+@media (width >= 80rem) {
+    :root {
+        --px-sm: 32px;
+        --py-sm: 14px;
+        --py-md: 20px;
+        --py-lg: 40px;
+    }
+
+    .desktop-only {
+        display: initial;
+    }
+
+}

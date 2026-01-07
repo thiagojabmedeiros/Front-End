@@ -1,0 +1,20 @@
+#app1 {
+    border: solid red;
+}
+#app1 > div {
+    border: dashed black;
+}
+
+#app2 {
+    border: solid red;
+}
+#app2 > div {
+    border: dashed black;
+}
+
+#app3 {
+    border: solid red;
+}
+#app3 > div {
+    border: dashed black;
+}
