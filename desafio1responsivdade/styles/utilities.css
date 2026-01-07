@@ -2,9 +2,29 @@
     padding-inline: var(--px-sm);
 }
 
+.px-md {
+    padding-inline: var(--px-md);
+}
+
 .py-sm {
     padding-block: var(--py-sm);
 }
 
+.py-md {
+    padding-block: var(--py-md);
+}
 
+.flex {
+    display: flex;
+}
 
+.grid {
+    display: grid;
+}
+
+.center {
+    place-items: center;
+}
+.gap-1rem {
+    gap: 1rem
+}

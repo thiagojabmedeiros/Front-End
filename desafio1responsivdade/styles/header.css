@@ -18,6 +18,11 @@ div {
     height: 2.5rem;
 }
 
+.lupa {
+    width: 2;
+    height: 2;
+}
+
 @media (width >= 80rem) {
     .foto {
         width: 11rem;
