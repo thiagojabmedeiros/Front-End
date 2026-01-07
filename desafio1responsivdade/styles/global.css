@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+header {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+  justify-content: center;
+}
+
+body {
+  background-color: black;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 300px 215px 150px;
+  justify-content: space-evenly;
+  padding: 10px;
+
+  border: solid violet;
+  background-color: violet;
+  border-radius: 8px;
+  
+  min-width: 700px;
+  max-width: 850px;
+}
+
+#app {
+  background-color: blueviolet;
+  border: solid blueviolet;
+  display: flex;
+  gap: 10px;
+  justify-content: space-evenly;
+  padding: 10px;
+  border-radius: 8px;
+  margin-right: 5px;
+}
+
+#app > div {
+  background-color: purple;
+  border: dashed purple;
+  border-radius: 8px;
+  padding: 10px;
+  align-content: center;
+  text-align: center;
+}
+
+#app2 {
+  background-color: blueviolet;
+  border: solid blueviolet;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 2fr 1fr;
+  gap: 10px;
+
+  padding: 10px;
+  border-radius: 8px;
+  margin-inline: 5px;
+}
+
+#app2 > div {
+  background-color: purple;
+  border: dashed purple;
+  border-radius: 8px;
+  padding: 10px;
+  align-content: center;
+  text-align: center;
+}
+
+#app3 {
+  display: grid;
+  grid-template-rows: 2fr 1fr 1fr;
+  gap: 10px;
+  border: solid blueviolet;
+  background-color: blueviolet;
+  border-radius: 8px;
+  margin-left: 5px;
+  padding: 10px;
+}
+
+#app3 > div {
+  background-color: purple;
+  border: dashed purple;
+  border-radius: 8px;
+  padding: 10px;
+  align-content: center;
+  text-align: center;
+}
+
+.container2 {
+  background-color: yellow;
+  border: solid yellow;
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: 215px 300px 150px;
+  justify-content: space-evenly;
+  padding: 10px;
+    
+  min-width: 700px;
+  max-width: 850px;
+}
+
+#app4 {
+  background-color: orange;
+  border: solid orange;
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-right: 5px;
+  padding: 10px;
+}
+
+#app4 > div {
+  background-color: red;
+  border: dashed red;
+  border-radius: 8px;
+  padding: 10px;
+  align-content: center;
+  text-align: center;
+}
+
+#app5 {
+  padding: 10px;
+  background-color: orange;
+  border: solid orange;
+  border-radius: 8px;
+  display: grid;
+  gap: 10px;
+  margin-inline: 5px;
+  
+  grid-template-areas: 
+  "A A A"
+  "B B C"
+  "D X C";
+}
+
+#app5 > div {
+  background-color: red;
+  border: dashed red;
+  border-radius: 8px;
+  align-content: center;
+  text-align: center;
+}
+
+#app5 > div:nth-child(1) {
+  grid-area: A;
+}
+#app5 > div:nth-child(2) {
+  grid-area: B;
+}
+#app5 > div:nth-child(3) {
+  grid-area: C;
+}
+#app5 > div:nth-child(4) {
+  grid-area: X;
+}
+#app5 > div:nth-child(5) {
+  grid-area: D;
+}
+
+#app6 {
+  background-color: orange;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  border: solid orange;
+  border-radius: 8px;
+  padding: 10px;
+  margin-left: 5px;
+}
+
+#app6 > div {
+  background-color: red;
+  border: dashed red;
+  border-radius: 8px;
+  align-content: center;
+  text-align: center;
+}
+
+* div:hover {
+  transform: scale(1.1);
+}
