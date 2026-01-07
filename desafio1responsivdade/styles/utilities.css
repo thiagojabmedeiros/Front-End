@@ -1,0 +1,10 @@
+.px-sm {
+    padding-inline: var(--px-sm);
+}
+
+.py-sm {
+    padding-block: var(--py-sm);
+}
+
+
+

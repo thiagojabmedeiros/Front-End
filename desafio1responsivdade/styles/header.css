@@ -1,0 +1,26 @@
+nav {
+    border: solid black;
+    display: flex;
+    justify-content: space-between;
+}
+
+div {
+    border: solid red;
+}
+
+.foto {
+    width: 7.5rem;
+    height: 7.5rem;
+}
+
+.fotop {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+@media (width >= 80rem) {
+    .foto {
+        width: 11rem;
+        height: 11rem;
+    }
+}
