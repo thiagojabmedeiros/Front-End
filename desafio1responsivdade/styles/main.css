@@ -1,0 +1,26 @@
+main {
+    border: solid black;
+    display: grid;
+    
+}
+
+div {
+    border: solid red;
+}
+
+.imagens {
+    width: 328px;
+    height: 328px;
+}
+
+@media (width >= 80rem) {
+    .imagens {
+        width: 286px;
+        height: 286px;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

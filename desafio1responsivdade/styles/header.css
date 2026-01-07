@@ -1,11 +1,11 @@
-nav {
+header {
+    background-color: var(--surface-color);
     border: solid black;
-    display: flex;
-    justify-content: space-between;
 }
 
-div {
-    border: solid red;
+nav {
+    display: flex;
+    justify-content: space-between;
 }
 
 .foto {
@@ -23,9 +23,54 @@ div {
     height: 2;
 }
 
+/*pefil*/
+.info {
+    display: grid;
+    max-width: 330px;
+}
+
+#profile {
+    display: grid;
+    gap: 2rem;
+}
+
+.profile-info {
+    display: grid;
+    gap: 1rem;
+}
+
+.topicos {
+    padding-top: var(--py-lg);
+}
+
+.topicos > li:nth-child(1) {
+    margin-bottom: 1rem;
+}
+.topicos > li:nth-child(2) {
+    margin-bottom: 1rem;
+}
+
 @media (width >= 80rem) {
     .foto {
         width: 11rem;
         height: 11rem;
     }
+
+    .info {
+        display: grid;
+        grid-template-columns: 330px;
+        grid-template-rows: 1fr 2fr;
+        max-width: 330px;
+    }
+
+    .profile-info {
+        display: flex;
+        gap: 2rem;
+    }
+
+    #profile {
+        display: flex;
+        justify-content: space-between;
+    }
+
 }

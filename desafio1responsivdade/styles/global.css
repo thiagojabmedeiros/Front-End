@@ -18,7 +18,7 @@
   --brand-color: #EF5F4C;
   --background-color: #FFFFFF;
   --surface-color: #F5F5F5;
-  --skelton-color: #D9D9D9;
+  --skeleton-color: #D9D9D9;
   --shape-transparency: hsl(0, 0%, 56%);
   --text-color-primary: #313131;
   --text-color-secondary: #6C6C6C;
@@ -42,6 +42,7 @@
 
   --py-sm: 1rem;
   --py-md: 2rem;
+  --py-lg2: 1rem;
 }
 
 
@@ -76,6 +77,10 @@ a {
   color: inherit;
 }
 
+ul {
+  list-style: none;
+}
+
 /*responsividade desktop*/
 
 .desktop-only {
@@ -89,6 +94,8 @@ a {
     /*padding*/
     --px-sm: 2rem;
     --py-sm: 1.25rem;
+    --py-lg: 2.25rem;
+    --py-lg2: 1rem;
   }
   
   .desktop-only {
