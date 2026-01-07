@@ -1,11 +1,6 @@
 main {
-    border: solid black;
     display: grid;
-    
-}
-
-div {
-    border: solid red;
+    background-color: var(--background-color);
 }
 
 .imagens {
