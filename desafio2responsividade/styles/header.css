@@ -1,7 +1,16 @@
 header {
-    border: solid red;
+    border-block: 0.5px solid gray;
+    overflow: auto;
+    background-color: var(--background-color);
 }
 
 header > div {
-    border: dashed black;
+    display: grid;
+    grid-template-columns: 135px 75px 82px 54px 61px 146px 114px;
+    gap: 95px;
+
+    & span {
+
+        color: var(--text-color-secondary);
+    }
 }

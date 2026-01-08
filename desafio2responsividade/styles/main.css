@@ -1,9 +1,75 @@
 #app1 {
-    border: solid red;
+    background-color: var(--background-color);
+    display: grid;
+    gap: 16px;
 }
-#app1 > div {
-    border: dashed black;
+#app1 > div:nth-child(1) {
+    background-image: url("/desafio2responsividade/assets/imgs/Image01.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: grid;
+    align-content: end;
+    gap: 8px;
+    padding-bottom: 24px;
+    padding-inline: 24px;
 }
+
+#app1 > div:nth-child(2) {
+    display: grid;
+    gap: 16px;
+    & div:nth-child(1){
+        background-image: url("/desafio2responsividade/assets/imgs/Image02.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    & div:nth-child(2){
+        background-image: url("/desafio2responsividade/assets/imgs/Image03.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    & div:nth-child(3){
+        background-image: url("/desafio2responsividade/assets/imgs/Image04.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    & div:nth-child(4){
+        background-image: url("/desafio2responsividade/assets/imgs/Image05.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+@media (width >= 80rem) {
+    #app1 {
+        display: grid;
+        grid-template-columns: 608px 592px;
+        grid-template-rows: none;
+        gap: 16px;
+    }
+
+    #app1 > div:nth-child(2) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 #app2 {
     border: solid red;
