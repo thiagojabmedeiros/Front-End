@@ -11,6 +11,7 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+
 :root {
     /*cores*/
     --brand-color-light: #60A5FA;
@@ -79,10 +80,6 @@ p {
 a {
     text-decoration: none;
     color: inherit;
-}
-
-body {
-    background-color: var();
 }
 
 .desktop-only {
