@@ -22,11 +22,26 @@
 .center {
     place-content: center;
 }
+.centeritems {
+    align-items: center;
+}
+.gap32 {
+    gap: 32px;
+}
+.gap24 {
+    gap: 24px;
+}
 .gap16 {
     gap: 16px;
 }
 .gap4 {
     gap: 4px;
+}
+
+.especifico {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 }
 
 /*cores*/
@@ -84,6 +99,17 @@
     border-radius: 4px;
 }
 
+.img5 {
+    height: 72px;
+    width: 72px;
+}
+.img6 {
+    height: 160px;
+    width: 328px;
+}
+.relative {
+    position: absolute;
+}
 
 .blockimg {
     display: flex;
@@ -112,8 +138,20 @@
 }
 
 .add {
+    background-image: url("/desafio2responsividade/assets/Ads.png");
+    background-position: center;
+    background-size: contain;
     height: 188.58px;
     width: 328px;
+    
+}
+
+.icon {
+    height: 16px;
+    width: 16px;
+}
+.spcbt {
+    justify-content: space-between;
 }
 
 @media (width >= 80rem) {
@@ -135,6 +173,15 @@
         width: 176px;
         border-radius: 4px;
     }
+    .img5 {
+        height: 76px;
+        width: 76px;
+    }
+    .img6 {
+        height: 160px;
+        width: 292px;
+    }
+
     .blockimg {
         display: flex;
         flex-direction: row-reverse;
