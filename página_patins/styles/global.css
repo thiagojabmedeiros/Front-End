@@ -30,24 +30,23 @@
     --ff-montserrat: "Montserrat", sans-serif;
 
     /*tamanho da fonte*/
-    --fs-h1: 64px;
-    --fs-h2: 40px;
+    --fs-h1: 32px;
+    --fs-h2: 24px;
     --fs-button: 16px;
-    --fs-span: 14px;
-
+    --fs-span: 12px;
+    
     /*peso da fonte*/
     --fw-bold: 700;
     --fw-medium: 500;
-
+    
     /*line-height*/
     --lh-h1: 1.25;
     --lh-h2: 1.20;
     --lh-button: 1.50;
     --lh-span: 1.50;
-
+    
     /*paddings*/
     --px: 24px;
-    
     --py-sm: 12px;
     --py-md: 16px;
     --py-lg: 24px;
@@ -57,8 +56,27 @@
     display: none;
 }
 
+h1, h2 {
+    font-family: var(--ff-syne);
+    font-weight: var(--fw-bold);
+}
+
+h1 {
+    font-size: var(--fs-h1);
+    line-height: var(--lh-h1);
+}
+
+h2 {
+    font-size: var(--fs-h2);
+    line-height: var(--lh-h2);
+}
+
 @media (width >= 1280px) {
     :root {
+        --fs-h1: 64px;
+        --fs-h2: 40px;
+        --fs-span: 14px;
+        
         --px: 32px;
         --py-md: 40px; 
         --py-lg: 40px;
@@ -68,3 +86,5 @@
         display: initial;
     }
 }
+
+
