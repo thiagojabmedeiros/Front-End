@@ -1,0 +1,70 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font: inherit;
+
+    --webkit-font-smoothing: antialiased;
+    --moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+    /*cores*/
+    --snitap-sun: #FFCD1E;
+    --snitap-sky-mid: #06B6D4;
+    --snitap-sky-light: #67E8F9;
+    --snitap-joy-mid: #DB2777;
+    --snitap-joy-mid: #F472B6;
+    --snitap-left-mid: #16A34A;
+
+    /*base*/
+    --text: #000000;
+    --highlights: #000000;
+    --background-color: #FAFAFA;
+
+    /*tipografia da fonte*/
+    --ff-syne: "Syne", sans-serif;;
+    --ff-montserrat: "Montserrat", sans-serif;
+
+    /*tamanho da fonte*/
+    --fs-h1: 64px;
+    --fs-h2: 40px;
+    --fs-button: 16px;
+    --fs-span: 14px;
+
+    /*peso da fonte*/
+    --fw-bold: 700;
+    --fw-medium: 500;
+
+    /*line-height*/
+    --lh-h1: 1.25;
+    --lh-h2: 1.20;
+    --lh-button: 1.50;
+    --lh-span: 1.50;
+
+    /*paddings*/
+    --px: 24px;
+    
+    --py-sm: 12px;
+    --py-md: 16px;
+    --py-lg: 24px;
+}
+
+.desktop-only {
+    display: none;
+}
+
+@media (width >= 1280px) {
+    :root {
+        --px: 32px;
+        --py-md: 40px; 
+        --py-lg: 40px;
+    }
+
+    .desktop-only {
+        display: initial;
+    }
+}
