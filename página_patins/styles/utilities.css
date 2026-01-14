@@ -71,7 +71,7 @@
     gap: 12px;
     width: 284px;
     height: 72px;
-
+    transition: 1s;
     box-shadow: 8px 10px 20px rgba(0, 0, 0, 0.25);
 }
 
@@ -83,6 +83,11 @@
     padding: 24px;
     width: 72px;
     height: 72px;
+    transition: 1s;
     box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.button1:hover, .button2:hover {
+    transform: scale(1.02);
 }
 
