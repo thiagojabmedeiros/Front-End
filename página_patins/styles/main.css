@@ -7,6 +7,7 @@ body {
 #banner {
     border: solid;
     display: grid;
+    place-items: center;
     gap: 32px;
 }
 
@@ -58,7 +59,7 @@ body {
     #banner {
         display: flex;
         flex-direction: row-reverse;
-        align-items: center;
+        place-content: center;
     }
     .banner1 {
         width: 488px;
