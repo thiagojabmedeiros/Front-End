@@ -1,16 +1,21 @@
 body {
     background-color: var(--background-color);
+    display: inline;
+    align-self: center;
+}
+.container {
+    display: grid;
+    justify-self: center;
 }
 
 
 /*banner da página*/
 #banner {
-    border: solid;
+    max-width: 1280px;
     display: grid;
     place-items: center;
     gap: 32px;
 }
-
 .banner1 {
     width: 312px;
     height: 312px;
