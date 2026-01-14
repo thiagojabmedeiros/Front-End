@@ -11,6 +11,7 @@
     width: 312px;
     height: 312px;
     position: relative;
+    overflow: hidden;
 }
 .banner2 {
     width: 312px;
