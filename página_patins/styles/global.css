@@ -7,8 +7,8 @@
     margin: 0;
     font: inherit;
 
-    --webkit-font-smoothing: antialiased;
-    --moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 :root {
@@ -17,8 +17,8 @@
     --snitap-sky-mid: #06B6D4;
     --snitap-sky-light: #67E8F9;
     --snitap-joy-mid: #DB2777;
-    --snitap-joy-mid: #F472B6;
-    --snitap-left-mid: #16A34A;
+    --snitap-joy-light: #F472B6;
+    --snitap-leaf-mid: #16A34A;
 
     /*base*/
     --text: #000000;
@@ -26,7 +26,7 @@
     --background-color: #FAFAFA;
 
     /*tipografia da fonte*/
-    --ff-syne: "Syne", sans-serif;;
+    --ff-syne: "Syne", sans-serif;
     --ff-montserrat: "Montserrat", sans-serif;
 
     /*tamanho da fonte*/
@@ -52,38 +52,64 @@
     --py-lg: 24px;
 }
 
-.desktop-only {
-    display: none;
-}
-
-h1, h2 {
+/*textos da página*/
+.h1, .h2 {
     font-family: var(--ff-syne);
     font-weight: var(--fw-bold);
 }
+.button, .span {
+    font-family: var(--ff-montserrat);
+    font-weight: var(--fw-medium);
+}
 
-h1 {
+.h1 {
     font-size: var(--fs-h1);
     line-height: var(--lh-h1);
 }
-
-h2 {
+.h2 {
     font-size: var(--fs-h2);
     line-height: var(--lh-h2);
 }
+.button {
+    font-size: var(--fs-button);
+    line-height: var(--lh-button);
+}
+.span {
+    font-size: var(--fs-span);
+    line-height: var(--lh-span);
+}
+
+/*itens que só aparecem no desktop/mobile*/
+.desktop-only {
+    display: none;
+}
+.mobile-only {
+    display: initial;
+}
+
+/*configurações do desktop*/
 
 @media (width >= 1280px) {
     :root {
+        /*tamanhos da fonte*/
         --fs-h1: 64px;
         --fs-h2: 40px;
         --fs-span: 14px;
         
+        /*paddings*/
         --px: 32px;
+
+        --py-sm: 12px;
         --py-md: 40px; 
         --py-lg: 40px;
     }
 
     .desktop-only {
         display: initial;
+    }
+
+    .mobile-only {
+        display: none;
     }
 }
 

@@ -1,0 +1,85 @@
+/*paddings*/
+.px {
+    padding-inline: var(--px);
+}
+
+.py-sm {
+    padding-block: var(--py-sm);
+}
+
+.py-md {
+    padding-block: var(--py-md);
+}
+
+.py-lg {
+    padding-block: var(--py-lg); 
+}
+
+
+/*displays*/
+.flex {
+    display: flex;
+}
+.grid {
+    display: grid;
+}
+.center {
+    align-items: center;
+}
+.gap12px {
+    gap: 12px;
+}
+
+
+/*textos*/
+.h1, .h2 {
+    font-family: var(--ff-syne);
+    font-weight: var(--fw-bold);
+}
+.button, .span {
+    font-family: var(--ff-montserrat);
+    font-weight: var(--fw-medium);
+}
+
+.h1 {
+    font-size: var(--fs-h1);
+    line-height: var(--lh-h1);
+}
+.h2 {
+    font-size: var(--fs-h2);
+    line-height: var(--lh-h2);
+}
+.button {
+    font-size: var(--fs-button);
+    line-height: var(--lh-button);
+}
+.span {
+    font-size: var(--fs-span);
+    line-height: var(--lh-span);
+}
+
+
+/*botões*/
+.button1 {
+    background-color: var(--snitap-sun);
+    border: none;
+    border-radius: 80px;
+    padding-inline: 48px;
+    padding-block: 24px;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 284px;
+    height: 72px;
+}
+
+.button2 {
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    padding: 24px;
+    width: 72px;
+    height: 72px;
+}

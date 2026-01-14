@@ -1,0 +1,30 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    border: solid;
+}
+
+.img1 {
+    width: 32px;
+    height: 32px;
+}
+
+/*produto no carrinho*/
+.num1 {
+    /*fonte do círculo*/
+    font-family: "Inter", sans-serif;
+    font-weight: var(--fw-medium);
+    text-align: center;
+    color: black;
+
+    /*propriedades do círculo*/
+    background-color: var(--snitap-sun); 
+    width: 20px; 
+    height: 20px;
+    border-radius: 50%;
+    
+    /*posição*/
+    position: absolute;
+    margin-left: 20px;
+    margin-top: -8px;
+}
