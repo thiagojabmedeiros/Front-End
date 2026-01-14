@@ -1,0 +1,97 @@
+/*banner da página*/
+#banner {
+    border: solid;
+    max-width: 1280px;
+    display: grid;
+    place-items: center;
+    gap: 32px;
+    padding-bottom: 32px;
+}
+.banner1 {
+    width: 312px;
+    height: 312px;
+    position: relative;
+}
+.banner2 {
+    width: 312px;
+    height: 296px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+.banner2display {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 24px;
+}
+
+
+/*imagens do banner*/
+.imgb1 {
+    width: 312px;
+    height: 312px;
+    position: absolute;
+}
+.imgb2 {
+    width: 312px;
+    height: 295px;
+    position: absolute;
+}
+.stars1 {
+    width: 56px;
+    height: 45px;
+    position: absolute;
+    top: 80px;
+}
+.stars2 {
+    width: 25px;
+    height: 38px;
+    position: absolute;
+    top: 170px;
+    left: 295px;
+}
+
+@media (width >=1280px) {
+    #banner {
+        display: flex;
+        flex-direction: row-reverse;
+        place-content: center;
+    }
+    .banner1 {
+        width: 488px;
+        height: 488px;
+    }
+    .banner2 {
+        width: 696px;
+        height: 281px;
+    }
+    .banner2display {
+        display: flex;
+        flex-direction: row;
+        gap: 32px;
+    }
+    .imgb1 {
+        width: 488px;
+        height: 488px;
+        position: absolute;
+        
+    }
+    .imgb2 {
+        width: 488px;
+        height: 462px;
+        position: absolute;
+    }
+    .stars1 {
+        width: 88px;
+        height: 72px;
+        position: absolute;
+        top: 130px;
+    }
+    .stars2 {
+        width: 40px;
+        height: 60px;
+        position: absolute;
+        top: 270px;
+        left: 465px;
+    }
+}

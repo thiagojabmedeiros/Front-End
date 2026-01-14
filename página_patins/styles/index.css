@@ -1,5 +1,10 @@
 @import url(global.css);
 @import url(utilities.css);
+
 @import url(header.css);
+
+@import url(banner.css);
+@import url(line.css);
 @import url(main.css);
+
 @import url(footer.css);
