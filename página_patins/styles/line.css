@@ -1,15 +1,42 @@
 #linha {
-    border: solid;
-}
-.linha {
+    /*fonte*/
     font-family: var(--ff-syne);
     font-size: 20px;
     font-weight: var(--fw-bold);
     line-height: 1.2;
+
+    /*propriedades*/
+    border: solid;
+    overflow: hidden;
+
+
+    .scroller {
+        padding-block: 16px;
+        width: 100%;
+    }
     
-    display: flex;
-    gap: 24px;
-    padding-block: 20px;
-    
-    background: linear-gradient(to left, var(--snitap-joy-mid), var(--snitap-joy-light));
+    .rolling {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        animation: rolling 2s linear infinite;
+    }
+    .bg-color-line {
+        background: linear-gradient(45deg, var(--snitap-sky-light), var(--snitap-joy-light));
+        background-position: 0 50%;
+        background-size: 400%;
+        animation: bg-animate 6s linear infinite;
+    }
+}
+
+@keyframes bg-animate {
+    50% {
+        background-position: 100% 50%;
+    }
+}
+
+@keyframes rolling {
+    to {
+        transform: translateX(-132px);
+    }
 }
