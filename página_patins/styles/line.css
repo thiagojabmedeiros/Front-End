@@ -6,9 +6,7 @@
     line-height: 1.2;
 
     /*propriedades*/
-    border: solid;
     overflow: hidden;
-
 
     .scroller {
         padding-block: 16px;

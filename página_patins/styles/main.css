@@ -1,5 +1,4 @@
 #main {
-    border: solid;
     display: grid;
     gap: 24px;
 }
@@ -38,6 +37,10 @@
 }
 
 @media (width >= 1280px) {
+    #main {
+        gap: 32px;
+    }
+
     .titulo {
         width: 1216px;
         height: 72px;

@@ -1,6 +1,5 @@
 /*banner da página*/
 #banner {
-    border: solid;
     max-width: 1280px;
     display: grid;
     place-items: center;
