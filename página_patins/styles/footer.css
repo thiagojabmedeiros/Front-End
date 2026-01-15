@@ -4,20 +4,73 @@ footer {
     display: grid;
     gap: 48px;
 
-    & div:nth-child(2) {
-        display: grid;
-        gap: 24px;
+    & div:nth-child(1) {
+        & img {
+            transition: transform 500ms;
+        }
+        & img:hover {
+            transform: rotate(90deg);
+        }
     }
+
+    & div:nth-child(2) {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        
+        & div {
+            background-color: var(--snitap-sky-light);
+            width: 100%;
+            height: 2px;
+            transform: translateX(-100%);
+            transition: transform 300ms;
+        }
+        
+        & a {
+            overflow: hidden;
+        }
+
+        & a:hover {
+            & div {
+                transform: translateX(1%);
+            }
+        }
+        & a:nth-child(1) {
+            width: 48px;
+        }
+        & a:nth-child(2) {
+            width: 98px;
+        }
+        & a:nth-child(3) {
+            width: 185px;
+        }        
+    }
+
     & div:nth-child(3) {
         display: flex;
         align-items: center;
         gap: 16px;
 
         & img {
-            transition: transform 500ms;
+            position: static;
         }
-        img:hover {
-            transform: rotate(20deg);
+
+        & div {
+            position: absolute;
+            margin-top: 5px;
+            margin-left: 5px;
+            background-color: var(--snitap-sun);
+            z-index: -1;
+            transition: transform 300ms;
+            width: 1px;
+            height: 1px;
+            border-radius: 60%;
+        }
+
+        & a:hover {
+            & div {
+                transform: scale(30);
+            }
         }
     }
 }
@@ -31,6 +84,7 @@ footer {
         
         & div:nth-child(2) {
             display: flex;
+            flex-direction: row;
             gap: 32px;
         }
     }
