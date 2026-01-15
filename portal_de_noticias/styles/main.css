@@ -4,7 +4,7 @@
     gap: 16px;
 }
 #app1 > div:nth-child(1) {
-    background-image: url("/desafio2responsividade/assets/imgs/Image01.png");
+    background-image: url("/portal_de_noticias/assets/imgs/Image01.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -19,25 +19,25 @@
     display: grid;
     gap: 16px;
     & div:nth-child(1){
-        background-image: url("/desafio2responsividade/assets/imgs/Image02.png");
+        background-image: url("/portal_de_noticias/assets/imgs/Image02.png");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
     }
     & div:nth-child(2){
-        background-image: url("/desafio2responsividade/assets/imgs/Image03.png");
+        background-image: url("/portal_de_noticias/assets/imgs/Image03.png");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
     }
     & div:nth-child(3){
-        background-image: url("/desafio2responsividade/assets/imgs/Image04.png");
+        background-image: url("/portal_de_noticias/assets/imgs/Image04.png");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
     }
     & div:nth-child(4){
-        background-image: url("/desafio2responsividade/assets/imgs/Image05.png");
+        background-image: url("/portal_de_noticias/assets/imgs/Image05.png");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
