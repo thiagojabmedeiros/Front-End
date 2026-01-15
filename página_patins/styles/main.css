@@ -1,7 +1,32 @@
-body {
-    background-color: var(--background-color);
-}
-.container {
+#main {
+    border: solid;
     display: grid;
-    justify-self: center;
+    gap: 24px;
+}
+
+.titulo {
+    border: solid;
+    width: 312px;
+    height: 55px;
+    display: grid;
+    place-items: center;
+}
+
+.fotos {
+    display: grid;
+    gap: 24px;
+    
+    & div {
+        border: solid;
+        border-radius: 40px;
+        width: 312px;
+        height: 256px;
+    }
+}
+
+@media (width >= 1280px) {
+    .titulo {
+        width: 1216px;
+        height: 72px;
+    }
 }

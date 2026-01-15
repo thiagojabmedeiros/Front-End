@@ -1,0 +1,38 @@
+footer {
+    border: solid;
+    padding-top: 48px;
+    padding-bottom: 24px;
+    display: grid;
+    gap: 48px;
+
+    & div:nth-child(2) {
+        display: grid;
+        gap: 24px;
+    }
+    & div:nth-child(3) {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+        & img {
+            transition: transform 500ms;
+        }
+        img:hover {
+            transform: rotate(20deg);
+        }
+    }
+}
+
+@media (width >= 1280px) {
+    footer {
+        padding-top: 64px;
+        padding-bottom: 32px;
+        display: flex;
+        justify-content: space-between;
+        
+        & div:nth-child(2) {
+            display: flex;
+            gap: 32px;
+        }
+    }
+}

@@ -52,6 +52,14 @@
     --py-lg: 24px;
 }
 
+body {
+    background-color: var(--background-color);
+}
+.container {
+    display: grid;
+    justify-self: center;
+}
+
 a {
     text-decoration: none;
     color: inherit;
