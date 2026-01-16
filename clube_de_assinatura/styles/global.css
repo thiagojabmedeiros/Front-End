@@ -1,0 +1,60 @@
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+* {
+    font: inherit;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+    /*cores*/
+    --pink-light: #C59DD2;
+    --pink-base: #9547A5;
+    --pink-dark: #7D298A;
+    --pink-low: #3F0F41;
+    --blue-light: #73B6D2;
+    --blue-base: #73B6D2;
+    --blue-mid: #358BB9;
+    --blue-dark: #144A72;
+    --blue-low: #08233C;
+    --shape-stroke: #002347;
+    --shape-hover: #001933;
+    --shape-base: #000F1F;
+    --shape-background: #00050A;
+    --text-title: #F8FBFB;
+    --text-body: #E2E7E9;
+    --text-label: #BAC6C9;
+
+
+    /*tipografia*/
+    font-family: "Raleway", sans-serif;
+
+    /*tamanho fontes*/
+    --fs-title-lg: 48px;
+    --fs-title-md: 40px;
+    --fs-title-sm: 32px;
+    --fs-title-xsm: 16px;
+    --fs-subtitle: 32px;
+    --fs-body-lg: 20px;
+    --fs-body-md: 16px;
+    --fs-body-sm: 14px;
+    --fs-body-xsm: 12px;
+    --fs-link: 14px;
+    --fs-tag: 10px;
+
+    /*peso das fontes*/
+    --fw-bold: 700;
+    --fw-medium: 500;
+    --fw-regular: 400;
+
+    /*line-height das fontes*/
+    --lh-title: auto;
+    --lh-subtitle: 2;
+    --lh-body: 1.4;
+    --lh-others: auto;
+}
+
