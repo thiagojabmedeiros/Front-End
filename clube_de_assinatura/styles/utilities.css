@@ -1,0 +1,17 @@
+.navbutton {
+    width: 89px;
+    height: 40px;
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    
+    background-color: var(--pink-dark);
+    color: var(--text-title);
+    
+    font-weight: var(--fw-title);
+    font-size: var(--fs-link);
+    line-height: var(--lh-title);
+}
+

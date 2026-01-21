@@ -56,5 +56,11 @@
     --lh-subtitle: 2;
     --lh-body: 1.4;
     --lh-others: auto;
+
+    background-color: var(--shape-background);
 }
 
+a {
+    text-decoration: none;
+    font: inherit;
+}
