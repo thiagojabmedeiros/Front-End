@@ -59,6 +59,12 @@
     background-color: var(--shape-background);
 }
 
+body {
+    border: solid red;
+    display: grid;
+    justify-content: center;
+    margin-inline: auto;
+}
 a {
     text-decoration: none;
     font: inherit;
