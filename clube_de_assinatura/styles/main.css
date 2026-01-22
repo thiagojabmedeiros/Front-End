@@ -63,6 +63,8 @@ main {
 }
 
 .card1 {
+    position: absolute;
+    margin-left: 576.43px;
     width: 288px;
     height: 416px;
     border-radius: 24px;
@@ -71,6 +73,8 @@ main {
     transition: 1s, transform 300ms;
 }
 .card2 {
+    position: absolute;
+    margin-left: 300px;
     width: 288px;
     height: 416px;
     border-radius: 24px;
@@ -79,6 +83,8 @@ main {
     transition: 1s, transform 300ms;
 }
 .card3 {
+    position: absolute;
+
     width: 288px;
     height: 416px;
     border-radius: 24px;
@@ -91,5 +97,8 @@ main {
     transform: scale(1.01) translateY(-10px);
     & .button {
         background-color: var(--pink-dark);
+    }
+    & .button:hover {
+        background-color: var(--pink-base);
     }
 }

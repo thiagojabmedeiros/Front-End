@@ -9,8 +9,8 @@
     
     background-color: var(--pink-dark);
     color: var(--text-title);
-    
-    font-weight: var(--fw-title);
+    transition: 500ms;
+    font-weight: var(--fw-bold);
     font-size: var(--fs-link);
     line-height: var(--lh-title);
 }
@@ -33,11 +33,15 @@
     background-color: var(--blue-dark);
     color: var(--text-title);
     
-    font-weight: var(--fw-title);
+    font-weight: var(--fw-bold);
     font-size: var(--fs-link);
     line-height: var(--lh-title);
 
     transition: 600ms;
+}
+
+.navbutton:hover, .button:hover {
+    background-color: var(--pink-base);
 }
 
 .plano {
