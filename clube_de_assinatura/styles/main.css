@@ -38,7 +38,58 @@ main {
 
 .section2 {
     border: solid red;
-    margin-top: 222px;
+    margin-top: 88px;
     width: 1440px;
     height: 920px;
+}
+
+.section3 {
+    margin-top: 447px;
+    border: solid red;
+    height: 76px;
+    color: var(--text-body);
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-title-sm);
+    text-align: center;
+}
+
+.section4 {
+    margin-top: 56px;
+    border: solid red;
+    height: 606px;
+    width: 1050px;
+    display: block;
+    justify-self: center;
+}
+
+.card1 {
+    width: 288px;
+    height: 416px;
+    border-radius: 24px;
+    background-color: var(--shape-base);
+    border: 1px solid var(--shape-stroke);
+    transition: 1s, transform 300ms;
+}
+.card2 {
+    width: 288px;
+    height: 416px;
+    border-radius: 24px;
+    background-color: var(--shape-base);
+    border: 1px solid var(--shape-stroke);
+    transition: 1s, transform 300ms;
+}
+.card3 {
+    width: 288px;
+    height: 416px;
+    border-radius: 24px;
+    background-color: var(--shape-base);
+    border: 1px solid var(--shape-stroke);
+    transition: 1s, transform 300ms;
+}
+.card1:hover, .card2:hover, .card3:hover {
+    background-color: var(--shape-hover);
+    transform: scale(1.01) translateY(-10px);
+    & .button {
+        background-color: var(--pink-dark);
+    }
 }
