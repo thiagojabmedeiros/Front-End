@@ -1,0 +1,52 @@
+.pin {
+    position: absolute;
+    width: 222px;
+    height: 254px;
+    margin-left: 500px;
+    margin-top: 350px;
+    z-index: 1;
+    transition: transform 1s;
+    transition-delay: 30ms;
+    transition-timing-function: cubic-bezier(0.39, 0.58, 0.16, 1.39);
+    z-index: -1;
+}
+.book {
+    position: absolute;
+    width: 467px;
+    height: 617px;
+    margin-left: 473px;
+}
+.bookmark1 {
+    position: absolute;
+    width: 172px;
+    height: 536px;
+    margin-left: 750px;
+    margin-top: 50px;
+    transition: transform 1s;
+    transition-timing-function: cubic-bezier(0.39, 0.58, 0.16, 1.39);
+    z-index: -1;
+}
+.bookmark2 {
+    position: absolute;
+    width: 172px;
+    height: 536px;
+    margin-left: 720px;
+    margin-top: 67px;
+    transition: transform 1s;
+    transition-timing-function: cubic-bezier(0.39, 0.58, 0.16, 1.39);
+    transition-delay: 40ms;
+    z-index: -2;
+}
+
+.section2:hover {
+    .pin {
+        transform: translate(-140px, 100px) rotate(-15deg);
+    }
+    .bookmark1 {
+        transform: translate(125px, -140px) rotate(15deg);
+    }
+    .bookmark2 {
+        transform: translate(260px, -45px) rotate(20deg);
+    }
+
+}

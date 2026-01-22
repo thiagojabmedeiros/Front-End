@@ -1,6 +1,7 @@
 header {
     display: flex;
     flex-direction: column;
+    border: solid blue;
 }
 header > div:nth-child(1) {
     border: solid red;
@@ -47,6 +48,7 @@ nav > a:hover {
 }
 .headsubtitle {
     margin-top: 566px;
+    margin-bottom: 80px;
     border: solid red;
     width: 1200px;
     height: 300px;
