@@ -65,6 +65,7 @@ main {
 .card1 {
     position: absolute;
     margin-left: 375px;
+    margin-top: 50px;
     z-index: 3;
     width: 288px;
     height: 416px;
@@ -76,10 +77,17 @@ main {
         margin-top: 70px;
     }
 }
+
+.coelho{
+    position: absolute;
+    margin-top: -50px;
+    margin-left: 20px;
+
+}
 .card2 {
     position: absolute;
     margin-left: 100px;
-    margin-top: 30px;
+    margin-top: 80px;
     transform: rotate(-10deg);
     z-index: 1;
 
@@ -96,7 +104,7 @@ main {
 .card3 {
     position: absolute;
     margin-left: 650px;
-    margin-top: 50px;
+    margin-top: 100px;
     transform: rotate(10deg);
     z-index: 2;
 
@@ -130,9 +138,15 @@ main {
 .card2:hover {
     z-index: 4;
     transform: translate(-40px, -10px) rotate(-15deg);
+    .stars1 {
+        transform: rotate(-60deg);
+    }
 }
 
 .card3:hover {
     z-index: 4;
     transform: translate(50px, -10px) rotate(15deg);
+    .stars2 {
+        transform: rotate(60deg);
+    }
 }

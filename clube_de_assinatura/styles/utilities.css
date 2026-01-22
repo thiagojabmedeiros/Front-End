@@ -15,6 +15,19 @@
     line-height: var(--lh-title);
 }
 
+.stars1 {
+    position: absolute;
+    margin-top: 0px;
+    margin-left: -100px;
+    transition: transform 300ms;
+}
+.stars2 {
+    position: absolute;
+    margin-top: 340px;
+    margin-left: 300px;
+    transition: transform 300ms;
+}
+
 .fotoimg {
     display: flex;
     gap: 6px;
