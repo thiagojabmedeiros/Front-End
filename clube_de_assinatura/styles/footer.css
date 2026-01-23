@@ -1,0 +1,30 @@
+footer {
+    margin-top: 302px;
+}
+
+.footer {
+    width: 1440px;
+    height: 415px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 170px;
+    padding-inline: 160px;
+}
+
+.footerback {
+    width: 1440px;
+    height: 415px;
+    position: absolute;
+    z-index: -1;
+}
+
+.logofooter{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.conteudosfooter {
+    display: flex;
+    gap: 56px;
+}

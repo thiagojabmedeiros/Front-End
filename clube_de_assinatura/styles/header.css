@@ -1,10 +1,8 @@
 header {
     display: flex;
     flex-direction: column;
-    border: solid blue;
 }
 header > div:nth-child(1) {
-    border: solid red;
     position: absolute;
     z-index: -1;
     width: 1440px;
@@ -22,7 +20,6 @@ nav {
     justify-content: space-between;
     margin-top: 56px;
     margin-inline: 160px;
-    border: solid red;
 }
 nav > div:nth-child(1) {
     width: 230px;
@@ -38,7 +35,6 @@ nav > a:hover {
 
 .headtitle {
     margin-top: 164px;
-    border: solid red;
     width: 656px;
     height: 200px;
     margin-inline: auto;
@@ -49,7 +45,6 @@ nav > a:hover {
 .headsubtitle {
     margin-top: 566px;
     margin-bottom: 80px;
-    border: solid red;
     width: 1200px;
     height: 300px;
     margin-inline: auto;
