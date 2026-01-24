@@ -62,3 +62,15 @@ console.log(productName)
 //utilizar padrão snake_case:
 let product_name = "snake"
 console.log(product_name)
+
+// " ", ' ' e ` ` são maneiras de inserir uma string
+console.log("eu me 'chamo' thiago")
+console.log('eu me "chamo" thiago')
+
+// ` ` permite o uso de "" e de '' dentro, além de formatar a quebra de linhas.
+console.log(`
+    eu
+    'me' 
+    "chamo"
+    thiago
+    `)  
