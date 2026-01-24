@@ -73,4 +73,17 @@ console.log(`
     'me' 
     "chamo"
     thiago
-    `)  
+    `)   
+
+//passar mais de um parâmetro
+let username = "Thiago"
+let mail = "thiagold987@tocktmail.com"
+
+console.log(username, mail, "teste")
+
+// concatenação
+let message = "Olá, " + username + ". Você fez o resgistro com e-mail: " + mail + "."
+console.log(message)
+
+// template litarals
+console.log(`Olá, ${username}. Você fez o registro com o e-mail ${mail}.`)
