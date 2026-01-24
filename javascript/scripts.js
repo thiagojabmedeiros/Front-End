@@ -125,3 +125,30 @@ console.log("O valor é: " + emptiness)
 // null
 let nulo = null
 console.log("O valor é: " + nulo)
+
+
+// casting e conversão de tipos
+let value = "9"
+console.log(typeof value)
+console.log(typeof Number(value))
+
+let age = 18
+console.log(typeof age) 
+console.log(typeof age.toString())
+console.log(typeof String(age))
+
+/* no caso dos booleanos quando 
+ocorre o casting de um numero 
+para booleano, se há qualquer 
+valor diferente de zero na variavel
+o booleano será True, caso contrário
+False.
+*/
+let option = 1
+let option2 = 0
+console.log(typeof option)
+console.log(typeof option2)
+console.log(Boolean(option2))
+console.log(Boolean(option))
+console.log(typeof Boolean(option))
+
