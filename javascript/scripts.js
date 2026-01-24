@@ -87,3 +87,20 @@ console.log(message)
 
 // template litarals
 console.log(`Olá, ${username}. Você fez o registro com o e-mail ${mail}.`)
+
+
+// Number 
+console.log(typeof 5)
+
+// inteiro
+console.log(5)
+
+// inteiro negativo
+console.log(-5)
+
+// float ou real
+console.log(125.28)
+console.log(typeof 125.28)
+
+// not a number
+console.log(123 / "rodrigo")
