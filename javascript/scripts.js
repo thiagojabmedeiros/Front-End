@@ -104,3 +104,16 @@ console.log(typeof 125.28)
 
 // not a number
 console.log(123 / "rodrigo")
+
+
+// booleans
+console.log(true)
+console.log(false)
+
+let isLoading = true
+let isNotLoading = false
+
+console.log(isLoading)
+console.log(isNotLoading)
+console.log(typeof isLoading)
+console.log(typeof isNotLoading)
