@@ -117,3 +117,11 @@ console.log(isLoading)
 console.log(isNotLoading)
 console.log(typeof isLoading)
 console.log(typeof isNotLoading)
+
+// undefined
+let emptiness
+console.log("O valor é: " + emptiness)
+
+// null
+let nulo = null
+console.log("O valor é: " + nulo)
