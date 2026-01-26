@@ -165,4 +165,27 @@ console.log(`Divisão: ${divide}`)
 let power = 2 ** 4
 console.log(`Elevado: ${power}`)
 
+// incrementos e decrementos pelos operadores
+let num = 10
 
+// num = num + 1:
+num++
+console.log(num)
+
+// num = num + 10:
+num += 10
+console.log(num)
+
+// num = num * 2:
+num *= 2
+console.log(num)
+
+// num = num - 1:
+num--
+
+// num = num - 1:
+console.log(--num)
+
+// num = num / 10
+num /= 10
+console.log(num)
