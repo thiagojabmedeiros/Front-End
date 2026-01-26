@@ -61,3 +61,61 @@ newName2.textContent = "Marcos"
 newGuest2.append(newName2)
 
 lists.prepend(newGuest2)
+
+// eventos carregar
+window.addEventListener("load", () => {
+    console.log("pagina carregada")
+})
+
+// eventos de clique
+addEventListener("click", (e) => {
+    console.log(e)
+})
+
+// eventos scroll
+const unli = document.querySelector("ul")
+unli.addEventListener("scroll", (event) => {
+    if (unli.scrollTop > 460) {
+
+        unli.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        })
+    }
+})
+
+// eventos forms
+const form = document.querySelector("form")
+console.log(form)
+
+form.onsubmit = (e) => {
+    e.preventDefault()
+    console.log("Você clicou no botao")
+}
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault()
+    console.log("você clicou no botão")
+})
+
+// eventos input 
+const input1 = document.querySelector("input")
+input1.addEventListener("input", () => {
+    const regex = /\D+/g
+    const value1 = input1.value
+    const isValid = regex.test(value1)
+    console.log(isValid)
+})
+
+input1.onchange = () => {
+    console.log("O input mudou")
+}
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault()
+
+    const regex = /\d+/g
+    const value = input1.value.replace(regex, "X")
+
+    console.log(value)
+})
