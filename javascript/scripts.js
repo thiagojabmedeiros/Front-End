@@ -275,3 +275,15 @@ switch(option3) {
     default: // quando o valor não se encaixa em nada
         console.log("Essa é a mensagem padrão")
 }
+
+// try, catch e finally:
+let idea = 1
+try {
+    if (idea === 1) {
+        throw new Error("O valor da variável idea é 1")
+    }
+} catch(error) {
+    console.log(error)
+} finally {
+    console.log("fim")
+}
