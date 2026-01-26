@@ -237,3 +237,25 @@ console.log(fake || fake)
 // Negação: !, possui valor contrário
 console.log(truth)
 console.log(!truth)
+
+// Operador condicional ternário:
+console.log("--------operadores condicionais---------")
+let idade = 16
+console.log(
+    age >= 18 // condição 
+    ? "Você pode beber" // se for verdadeira
+    : "Você não pode beber" // se for falsa
+)
+
+// operadores if, else if e else:
+let hour = 11
+if (hour == 12) {
+    console.log("Agora é meio dia")
+}
+else if (hour > 12) {
+    console.log("Agora já passou de meio dia")
+}
+else {
+    console.log("Ainda não passou de meio dia")
+}
+
