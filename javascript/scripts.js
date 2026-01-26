@@ -209,3 +209,31 @@ console.log(one === 1)
 console.log(one === "1")
 console.log(one !== "1") // não é estritamente igual
 
+// operadores de maior, menor, maior igual e menor igual
+let payment = 150
+let payment2 = 200
+
+// maior e menor
+console.log(payment > payment2)
+console.log(payment < payment2)
+
+// maior igual e menor igual
+payment = 200
+console.log(payment <= payment2)
+console.log(payment >= payment2)
+
+// operadores lógicos
+let truth = true
+let fake = false
+
+// AND, (E): &&, só será verdadeiro quando os dois valores forem verdadeiros.
+console.log(truth && fake)
+console.log(truth && truth)
+
+// OR, (ou): ||: só será falso quando os dois forem falsos.
+console.log(truth || fake)
+console.log(fake || fake)
+
+// Negação: !, possui valor contrário
+console.log(truth)
+console.log(!truth)
