@@ -287,3 +287,50 @@ try {
 } finally {
     console.log("fim")
 }
+
+
+// funções:
+
+// ela pode ter um retorno
+console.log("---------Funções---------")
+/**
+ * 
+ * @param {Number} a primeiro número
+ * @param {Number} b segundo número
+ * @returns {Number} retorna a soma dos números
+ */
+function soma(a, b) {
+    let soma1 = a + b
+    return soma1
+}
+console.log(soma(2, 21))
+
+
+
+// Comentários e documentação de funções
+/**
+ * 
+ * @param {String} nome digite o primeiro nome
+ * @param {String} sobrenome digite o segundo nome
+*/
+
+// ela pode imprimir algo
+function concatenar(nome, sobrenome) {
+    console.log(`${nome} ${sobrenome}`)
+}
+concatenar("Thiago", "Medeiros")
+
+
+// função anônima
+const multiplicacao = function(a, b) {
+    let multiply = a * b
+    return multiply
+}
+console.log(multiplicacao(10, 12))
+
+// arrow function 
+const powerx = (a, b) => {
+    let power = a ** b
+    console.log(power)
+}
+powerx(2, 10)
