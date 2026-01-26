@@ -152,3 +152,17 @@ console.log(Boolean(option2))
 console.log(Boolean(option))
 console.log(typeof Boolean(option))
 
+
+// operadores aritméticos
+let sum = 1 + 2
+console.log(`Soma: ${sum}`)
+let sub = 3 - 7 
+console.log(`Subtracao: ${sub}`)
+let times = 3 * 8
+console.log(`Multiplicação: ${times}`)
+let divide = 6 / 2
+console.log(`Divisão: ${divide}`)
+let power = 2 ** 4
+console.log(`Elevado: ${power}`)
+
+
