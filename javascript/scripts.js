@@ -259,3 +259,19 @@ else {
     console.log("Ainda não passou de meio dia")
 }
 
+// switch cases
+let option3 = 0
+
+switch(option3) {
+    case 1:
+        console.log("caso 1")
+        break
+    case 2:
+        console.log("caso 2")
+        break
+    case 3:
+        console.log("caso 3")
+        break
+    default: // quando o valor não se encaixa em nada
+        console.log("Essa é a mensagem padrão")
+}
