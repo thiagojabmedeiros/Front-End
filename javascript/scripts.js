@@ -189,3 +189,23 @@ console.log(--num)
 // num = num / 10
 num /= 10
 console.log(num)
+
+// igual e diferente de: (== e !=)
+let one = 1 
+let two = 2
+
+console.log(one == 1)
+console.log(one == "1")
+console.log(one != 1)
+console.log(two == 2)
+console.log(two == "2")
+console.log(two != "2")
+
+console.log(one == two)
+
+// estritamente igual a e estritamente diferente de:
+// (=== e !==)
+console.log(one === 1)
+console.log(one === "1")
+console.log(one !== "1") // não é estritamente igual
+
