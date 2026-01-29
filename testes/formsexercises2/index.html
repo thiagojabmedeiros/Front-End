@@ -3,70 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
     <title>forms</title>
-    <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-    </style>
 </head>
 <body>
     <form action="data.txt" method="post">
         <!--Input text-->
-        <label for="nameCamp">Name:</label>
-        <input id="nameCamp" type="text" placeholder="type your name" required>
-        <br><br>
-        <label for="lastNameCamp">Last-name:</label>
-        <input id="lastNameCamp" type="text" placeholder="type your last name">
-        <br><br>
+        <div>
+            <label for="nameCamp">Name:</label>
+            <input id="nameCamp" type="text" placeholder="type your name" required>
+            <label for="lastNameCamp">Last-name:</label>
+            <input id="lastNameCamp" type="text" placeholder="type your last name">
+        </div>
 
         <!--Input e-mail-->
-        <label for="emailCamp">E-mail:</label>
-        <input id="emailCamp" type="email" placeholder="type your e-mail">
-        <br><br>
+        <div>
+            <label for="emailCamp">E-mail:</label>
+            <input id="emailCamp" type="email" placeholder="type your e-mail">
+        </div>
 
         <!--Input password-->
-        <label for="passwordCamp">Password:</label>
-        <input id="passwordCamp" type="password" placeholder="enter your password">
-        <br><br>
+        <div>
+            <label for="passwordCamp">Password:</label>
+            <input id="passwordCamp" type="password" placeholder="enter your password">
+        </div>
 
         <!--Input radio-->
-        <input id="cat" value="cat" name="animal" type="radio">
-        <label for="cat">Cat</label>
-        <br>
-        <input id="mouse" value="mouse" name="animal" type="radio">
-        <label for="mouse">Mouse</label>
-        <br>
-        <input id="dog" value="dog" name="animal" type="radio">
-        <label for="dog">Dog</label>
-        <br><br>
+        <div>
+            <input id="cat" value="cat" name="animal" type="radio">
+            <label for="cat">Cat</label>
+            <br>
+            <input id="mouse" value="mouse" name="animal" type="radio">
+            <label for="mouse">Mouse</label>
+            <br>
+            <input id="dog" value="dog" name="animal" type="radio">
+            <label for="dog">Dog</label>
+        </div>
 
         <!--Input checkbox-->
-        <input id="tv" value="tv" name="item1" type="checkbox">
-        <label for="tv">TV</label>
-        <br>
-        <input id="tv" value="tv" name="item2" type="checkbox">
-        <label for="freezer">Freezer</label>
-        <br>
-        <input id="radio" value="radio" name="item3" type="checkbox">
-        <label for="radio">Radio</label>
-        <br><br>
+        <div>
+            <input id="tv" value="tv" name="item1" type="checkbox">
+            <label for="tv">TV</label>
+            <br>
+            <input id="tv" value="tv" name="item2" type="checkbox">
+            <label for="freezer">Freezer</label>
+            <br>
+            <input id="radio" value="radio" name="item3" type="checkbox">
+            <label for="radio">Radio</label>
+        </div>
         
         <!--Select-->
-        <select name="" id="">
-            <option selected disabled value="">Choose something</option>
-            <option value="Naruto">Naruto</option>
-            <option value="Spiderman">Spiderman</option>
-            <option value="Brazil">Brazil</option>
-        </select>
-        <br><br>
+        <div>
+            <select name="" id="">
+                <option selected disabled value="">Choose something</option>
+                <option value="Naruto">Naruto</option>
+                <option value="Spiderman">Spiderman</option>
+                <option value="Brazil">Brazil</option>
+            </select>
+        </div>
 
         <!--Input text-area-->
-        <label for="textAreaCamp">Text Area:</label><br>
-        <textarea rows="8" cols="16" name="text" id="textAreaCamp" placeholder="type your message"></textarea>
-        <br><br>
+        <div>
+            <label for="textAreaCamp">Text Area:</label><br>
+            <textarea rows="8" cols="16" name="text" id="textAreaCamp" placeholder="type your message"></textarea>
+        </div>
+
+        <!--Button-->
         <button type="submit">Enviar</button>
     </form>
 </body>
