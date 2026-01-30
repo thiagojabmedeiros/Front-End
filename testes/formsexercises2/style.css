@@ -1,0 +1,117 @@
+fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    padding-left: 500px;
+    gap: 12px;
+}
+body {
+    background-color: black;
+}
+form {
+    & legend {
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        color: rgba(255, 68, 0, 0.863);
+    }
+    & input {
+        background: linear-gradient(to left bottom, red, orange);
+        color: rgb(255, 222, 179);
+        border-radius: 8px;
+        border: none;
+        padding: 5px;
+        font-family: "poppins", sans-serif;
+        font-weight: 500;
+    }
+    & input::placeholder {
+        font-family: "Poppins", sans-serif;
+        color: rgba(255, 204, 137, 0.406);
+        font-weight: 600;
+        text-align: center;
+        opacity: 1;
+    }
+    & label {
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        position: relative;
+        width: max-content;
+        color: orange;
+    }
+    & label::after {
+        content: '';
+        background: linear-gradient(to right, red, orange);
+        border-radius: 10px;
+        width: 0;
+        height: 2px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transition: 400ms;
+    }
+    & label:hover::after {
+        width: 100%;
+    }
+}
+
+#button {
+    width: 100px;
+    height: 30px;
+    border-radius: 1000px;
+    color: antiquewhite;
+    border: none;
+    font: "Poppins", sans-serif;
+    font-weight: bold;
+    background-color: rgb(54, 54, 54);
+
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 500ms;
+}
+#button:hover {
+    z-index: 0;
+}
+#button::after {
+    content: '';
+    background: linear-gradient(to right, red, orange);
+    position: absolute;
+    width: 105%;
+    height: 113%;
+    border-radius: 1000px;
+    z-index: -1;
+}
+input:focus {
+    outline: 0.4px solid red;
+}
+textarea {
+    background: linear-gradient(to bottom left, red, orange);
+    border: none;
+    border-radius: 8px;
+    color: rgb(255, 222, 179);
+    font-family: "poppins", sans-serif;
+    font-weight: 500;
+    text-align: center;
+}
+textarea::placeholder {
+    color: rgba(255, 204, 137, 0.406);
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+textarea:focus {
+    outline: 0.4px solid red;
+}
+
+select {
+    background: linear-gradient(to bottom left, red, orange);
+    border: none;
+    color: rgba(255, 204, 137, 0.614);
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    padding: 5px;
+    border-radius: 1000px;
+}
+select option {
+    background: orange;
+}

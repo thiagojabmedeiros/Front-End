@@ -4,73 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <title>forms</title>
 </head>
 <body>
     <form action="data.txt" method="post">
-        <!--Input text-->
-        <div>
-            <label for="nameCamp">Name:</label>
-            <input id="nameCamp" type="text" placeholder="type your name" required>
-            <label for="lastNameCamp">Last-name:</label>
-            <input id="lastNameCamp" type="text" placeholder="type your last name">
-        </div>
+        <fieldset>
+            <legend>Forms</legend>
 
-        <!--Input e-mail-->
-        <div>
-            <label for="emailCamp">E-mail:</label>
-            <input id="emailCamp" type="email" placeholder="type your e-mail">
-        </div>
+            <!--Input text-->
+            <div id="inputText">
+                <label for="nameCamp">Name:</label>
+                <input id="nameCamp" type="text" placeholder="type your name" required>
+                <label for="lastNameCamp">Last-name:</label>
+                <input id="lastNameCamp" type="text" placeholder="type your last name">
+            </div>
 
-        <!--Input password-->
-        <div>
-            <label for="passwordCamp">Password:</label>
-            <input id="passwordCamp" type="password" placeholder="enter your password">
-        </div>
+            <!--Input e-mail-->
+            <div>
+                <label for="emailCamp">E-mail:</label>
+                <input id="emailCamp" type="email" placeholder="type your e-mail">
+            </div>
 
-        <!--Input radio-->
-        <div>
-            <input id="cat" value="cat" name="animal" type="radio">
-            <label for="cat">Cat</label>
-            <br>
-            <input id="mouse" value="mouse" name="animal" type="radio">
-            <label for="mouse">Mouse</label>
-            <br>
-            <input id="dog" value="dog" name="animal" type="radio">
-            <label for="dog">Dog</label>
-        </div>
+            <!--Input password-->
+            <div>
+                <label for="passwordCamp">Password:</label>
+                <input id="passwordCamp" type="password" placeholder="enter your password">
+            </div>
 
-        <!--Input checkbox-->
-        <div>
-            <input id="tv" value="tv" name="item1" type="checkbox">
-            <label for="tv">TV</label>
-            <br>
-            <input id="tv" value="tv" name="item2" type="checkbox">
-            <label for="freezer">Freezer</label>
-            <br>
-            <input id="radio" value="radio" name="item3" type="checkbox">
-            <label for="radio">Radio</label>
-        </div>
-        
-        <!--Select-->
-        <div>
-            <select name="" id="">
-                <option selected disabled value="">Choose something</option>
-                <option value="Naruto">Naruto</option>
-                <option value="Spiderman">Spiderman</option>
-                <option value="Brazil">Brazil</option>
-            </select>
-        </div>
+            <!--Input radio-->
+            <div>
+                <input id="cat" value="cat" name="animal" type="radio">
+                <label for="cat">Cat</label>
+                <br>
+                <input id="mouse" value="mouse" name="animal" type="radio">
+                <label for="mouse">Mouse</label>
+                <br>
+                <input id="dog" value="dog" name="animal" type="radio">
+                <label for="dog">Dog</label>
+            </div>
 
-        <!--Input text-area-->
-        <div>
-            <label for="textAreaCamp">Text Area:</label><br>
-            <textarea rows="8" cols="16" name="text" id="textAreaCamp" placeholder="type your message"></textarea>
-        </div>
+            <!--Input checkbox-->
+            <div>
+                <input id="tv" value="tv" name="item1" type="checkbox">
+                <label for="tv">TV</label>
+                <br>
+                <input id="tv" value="tv" name="item2" type="checkbox">
+                <label for="freezer">Freezer</label>
+                <br>
+                <input id="radio" value="radio" name="item3" type="checkbox">
+                <label for="radio">Radio</label>
+            </div>
+            
+            <!--Select-->
+            <div>
+                <select name="" id="">
+                    <option selected disabled value="">Choose something</option>
+                    <option value="Naruto">Naruto</option>
+                    <option value="Spiderman">Spiderman</option>
+                    <option value="Brazil">Brazil</option>
+                </select>
+            </div>
 
-        <!--Button-->
-        <button type="submit">Enviar</button>
+            <!--Input text-area-->
+            <div>
+                <label for="textAreaCamp">Text Area:</label><br>
+                <textarea rows="8" cols="16" name="text" id="textAreaCamp" placeholder="type your message"></textarea>
+            </div>
+            
+            <!--Button-->
+            <button id="button" type="submit">Enviar</button>
+        </fieldset>
     </form>
 </body>
 </html>
