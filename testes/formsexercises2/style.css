@@ -126,8 +126,3 @@ select option {
     color: blue;
     display: none;
 }
-
-input:user-invalid {
-    border: solid blue;
-    position: relative;
-}

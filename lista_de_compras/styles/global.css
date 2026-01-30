@@ -1,0 +1,47 @@
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+* {
+    font: inherit;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+    /*colors*/
+    --bg-primary: #F4F5FB;
+    --bg-secondary: #FFFFFF;
+    --color-brand: #CA3884;
+    --color-brand-hover: #A52C6B;
+    --color-danger: #C93847;
+    --content-primary: #080B12;
+    --content-secondary: #374151;
+    --content-tertiary: #9CA3AF;
+    --always-white: #FFFFFF;
+    --border-primary: #D1D5DB;
+    --border-hover: #B9C2D0;
+
+    /*tipografy*/
+    font-family: "Inter", sans-serif;
+
+    /*font-weight*/
+    --fw-title: 700;
+    --fw-label: 600;
+    --fw-paragraph: 400;
+    --fw-link: 400;
+
+    /*font-size*/
+    --fs-title: 24px;
+    --fs-label: 16px;
+    --fs-paragraph: 16px;
+    --fs-link: 14px;
+
+    /*line height*/
+    --lh-title: 32px;
+    --lh-label: 20px;
+    --lh-paragraph: 20px;
+    --lh-link: 16px;
+}

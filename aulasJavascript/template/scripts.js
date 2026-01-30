@@ -88,6 +88,7 @@ unli.addEventListener("scroll", (event) => {
 const form = document.querySelector("form")
 console.log(form)
 
+// mesmo evento de submit
 form.onsubmit = (e) => {
     e.preventDefault()
     console.log("Você clicou no botao")
