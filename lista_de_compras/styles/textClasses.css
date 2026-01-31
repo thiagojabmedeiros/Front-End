@@ -1,0 +1,31 @@
+.logo {
+    font-family: var(--ff-sora);
+    font-weight: var(--fw-logo);
+    font-size: var(--fs-logo);
+    line-height: var(--lh-logo);
+    color: var(--content-secondary);
+}
+
+.title {
+    font-weight: var(--fw-title);
+    font-size: var(--fs-title);
+    line-height: var(--lh-title);
+}
+
+.label {
+    font-weight: var(--fw-label);
+    font-size: var(--fs-label);
+    line-height: var(--lh-label);
+}
+
+.paragraph {
+    font-weight: var(--fw-paragraph);
+    font-size: var(--fs-paragraph);
+    line-height: var(--lh-paragraph);
+}
+
+.link {
+    font-weight: var(--fw-link);
+    font-size: var(--fs-link);
+    line-height: var(--lh-link);
+}

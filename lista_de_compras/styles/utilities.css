@@ -1,0 +1,29 @@
+/*displays*/
+.flex {
+    display: flex;
+}
+.grid {
+    display: grid;
+}
+
+/*alignment*/
+.centerFlexX {
+    justify-content: center;
+}
+.centerFlexY {
+    align-items: center;
+}
+.centerGridX {
+    justify-content: center;
+}
+.centerGridY {
+    align-content: center;
+}
+
+/*gaps*/
+.gap7px {
+    gap: 7px;
+}
+.gap12px {
+    gap: 12px;
+}

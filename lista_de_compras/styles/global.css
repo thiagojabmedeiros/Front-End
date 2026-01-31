@@ -26,20 +26,24 @@
 
     /*tipografy*/
     font-family: "Inter", sans-serif;
+    --ff-sora: "Sora", sans-serif;
 
     /*font-weight*/
+    --fw-logo: 700;
     --fw-title: 700;
     --fw-label: 600;
     --fw-paragraph: 400;
     --fw-link: 400;
 
     /*font-size*/
+    --fs-logo: 26.67px;
     --fs-title: 24px;
     --fs-label: 16px;
     --fs-paragraph: 16px;
     --fs-link: 14px;
 
     /*line height*/
+    --lh-logo: 40px;
     --lh-title: 32px;
     --lh-label: 20px;
     --lh-paragraph: 20px;
