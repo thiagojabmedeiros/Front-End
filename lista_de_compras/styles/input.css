@@ -1,0 +1,21 @@
+ul {
+    border: solid red;
+    height: 337px;
+    overflow-y: scroll;
+    display: grid;
+    gap: 12px;
+}
+li {
+    background-color: red;
+    width: 100%;
+    height: 57px;
+}
+
+@media (width >= 1366px) {
+    ul {
+        height: 297px;
+    }
+    li {
+        height: 49px;
+    }
+}

@@ -1,10 +1,10 @@
 /*form properties*/
-#createItem {
-    padding-top: 44px;
-}
 form {
+    border: solid red;
     display: grid;
     gap: 16px;
+    margin-top: 44px;
+    margin-bottom: 40px;
 }
 
 /*input properties*/
@@ -14,7 +14,7 @@ form {
     border: 3px solid var(--border-primary);
     border-radius: 12px;
     background-color: var(--always-white);
-    padding-left: 20px;
+    padding-left: 18px;
 }
 #newItem:hover {
     border: 3px solid var(--border-hover);
@@ -27,8 +27,10 @@ form {
     font-weight: 400;
     font-size: 16px;
     line-height: 140%;
-    color: var(--content-tertiary);
-    padding-left: 18px;
+    color: var(--border-primary);
+}
+#newItem:hover::placeholder {
+    color: var(--border-hover);
 }
 #newItem:focus::placeholder {
     color: var(--content-primary);
@@ -46,6 +48,7 @@ button {
     color: var(--always-white);
     font-size: 16px;
     font-weight: 600;
+    transition: 500ms;
 }
 button:hover {
     background-color: var(--color-brand-hover);

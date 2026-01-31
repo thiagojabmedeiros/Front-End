@@ -30,5 +30,8 @@
     font-size: var(--fs-link);
     line-height: var(--lh-link);
     color: var(--color-brand);
+    transition: 500ms;
 }
-
+.link:hover {
+    color: var(--color-brand-hover);
+}
