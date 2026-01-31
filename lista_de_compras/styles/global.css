@@ -32,8 +32,8 @@
     --fw-logo: 700;
     --fw-title: 700;
     --fw-label: 600;
-    --fw-paragraph: 400;
-    --fw-link: 400;
+    --fw-paragraph: 500;
+    --fw-link: 500;
 
     /*font-size*/
     --fs-logo: 26.67px;
@@ -49,3 +49,13 @@
     --lh-paragraph: 20px;
     --lh-link: 16px;
 }
+
+body {
+    background-color: var(--bg-primary);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+

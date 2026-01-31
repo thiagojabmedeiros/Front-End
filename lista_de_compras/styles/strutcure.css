@@ -1,0 +1,31 @@
+#logo {
+    display: none;
+}
+#title1{
+    border: solid red;
+    padding-top: 78px;
+    display: grid;
+    gap: 16px;
+}
+main {
+    border: solid blue;
+    width: 325px;
+    margin-inline: auto;
+}
+
+@media (width >= 1366px) {
+    #logo {
+        display: flex;
+        gap: 7px;
+        justify-content: center;
+        align-items: center;
+        border: solid red;
+        padding-top: 25px;
+    }
+    #title1 {
+    padding-top: 62px;
+    }
+    main {
+        width: 627px;
+    }
+}

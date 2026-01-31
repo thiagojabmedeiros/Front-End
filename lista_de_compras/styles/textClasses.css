@@ -10,6 +10,7 @@
     font-weight: var(--fw-title);
     font-size: var(--fs-title);
     line-height: var(--lh-title);
+    color: var(--content-primary);
 }
 
 .label {
@@ -28,4 +29,6 @@
     font-weight: var(--fw-link);
     font-size: var(--fs-link);
     line-height: var(--lh-link);
+    color: var(--color-brand);
 }
+
