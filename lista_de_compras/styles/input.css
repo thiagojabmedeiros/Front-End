@@ -1,0 +1,76 @@
+ul {
+    overflow-y: auto;
+    max-height: 264px;
+    display: grid;
+    gap: 12px;
+    border-block: 1px solid var(--border-primary);
+}
+li > label {
+    background-color: var(--bg-secondary);
+
+    height: 57px;
+    width: 100%;
+    border-radius: 12px;
+
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    padding-inline: 12px;
+
+    & input[type="checkbox"] {
+        appearance: none;
+        cursor: pointer;
+        height: 16px;
+        width: 16px;
+        border: 2px solid var(--border-primary);
+        border-radius: 6px;
+        transition: 400ms;
+    }
+    & input[type="checkbox"]:hover {
+        border: 2px solid var(--border-hover);
+    }
+    & input[type="checkbox"]:checked {
+        background-color: var(--color-brand);
+        border: 2px solid var(--color-brand);
+    }
+    & p {
+        margin-right: auto;
+    } 
+    & button {
+        height: 16px;
+        width: 16px;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+}
+
+.removedItem {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    padding-inline: 12px;
+    margin-top: 36px;
+    height: 44px;
+    width: 100%;
+    border-radius: 12px;
+    background-color: var(--color-danger);
+    & label {
+        color: var(--always-white);
+        margin-right: auto;
+    }
+    & button {
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+}
+
+@media (width >= 1366px) {
+    ul {
+        max-height: 232px;  
+    }
+    li > label {
+        height: 49px;
+    }
+}

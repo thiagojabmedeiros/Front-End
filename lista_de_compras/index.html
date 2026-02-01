@@ -17,7 +17,7 @@
 </head>
 <body>
     <div id="logo">
-        <img src="..\lista_de_compras\assets\Logo.svg">
+        <img src="..\lista_de_compras\assets\Logo.svg" alt="quicklist logo">
         <h1 class="logo">quicklist</h1>
     </div>
     
@@ -29,14 +29,45 @@
 
         <form id="form1" action="#">
             <input id="newItem" name="newItem" type="text" placeholder="Adicione um novo item">
-            <button id="button1" type="submit">Adicionar item</button>
+            <button id="buttonAdd" type="submit">Adicionar item</button>
         </form>
 
         <ul>
             <li>
+                <label for="">
+                    <input id="" name="" type="checkbox">
+                    <p>Pão de forma</p>
+                    <button type="button"><img src="..\lista_de_compras\assets\icons\trash.svg" alt="trash"></button>
+                </label>
             </li>
-
+            <li>
+                <label for="">
+                    <input id="" name="" type="checkbox">
+                    <p class="paragraph">Café preto</p>
+                    <button type="button"><img src="..\lista_de_compras\assets\icons\trash.svg" alt="trash"></button>
+                </label>
+            </li>
+            <li>
+                <label for="">
+                    <input id="" name="" type="checkbox">
+                    <p class="paragraph">Suco de laranja</p>
+                    <button type="button"><img src="..\lista_de_compras\assets\icons\trash.svg" alt="trash"></button>
+                </label>
+            </li>
+            <li>
+                <label for="">
+                    <input id="" name="" type="checkbox">
+                    <p class="paragraph">Bolacha</p>
+                    <button type="button"><img src="..\lista_de_compras\assets\icons\trash.svg" alt="trash"></button>
+                </label>
+            </li>
         </ul>
+
+        <div class="removedItem">
+            <img src="..\lista_de_compras\assets\icons\warning-circle-white.svg" alt="alert">
+            <label class="label">O item foi removido da lista</label>
+            <button><img src="..\lista_de_compras\assets\icons\delete-white.svg" alt="close"></button>
+        </div>
     </main>
 
     <script src="scripts.js"></script>

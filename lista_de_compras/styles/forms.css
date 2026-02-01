@@ -1,6 +1,5 @@
 /*form properties*/
-#form1 {
-    border: solid red;
+form {
     display: grid;
     gap: 16px;
     margin-top: 44px;
@@ -8,36 +7,39 @@
 }
 
 /*input properties*/
-#newItem {
+input[type="text"] {
     width: 326px;
     height: 44px;
     border: 3px solid var(--border-primary);
     border-radius: 12px;
     background-color: var(--always-white);
     padding-left: 18px;
+    transition: 300ms;
 }
-#newItem:hover {
+input[type="text"]:hover {
     border: 3px solid var(--border-hover);
 }
-#newItem:focus {
+input[type="text"]:focus {
     border: 3px solid var(--color-brand);
     outline: none;
 }
-#newItem::placeholder {
+input[type="text"]::placeholder {
     font-weight: 400;
     font-size: 16px;
     line-height: 140%;
     color: var(--border-primary);
+    transition: 300ms;
 }
-#newItem:hover::placeholder {
+input[type="text"]:hover::placeholder {
     color: var(--border-hover);
 }
-#newItem:focus::placeholder {
-    color: var(--content-primary);
+input[type="text"]:focus::placeholder {
+    color: var(--border-hover);
 }
 
 /*button propeties*/
-#button1 {
+#buttonAdd {
+    cursor: pointer;
     width: 326px;
     height: 44px;
     padding-block: 12px;
@@ -50,7 +52,7 @@
     font-weight: 600;
     transition: 500ms;
 }
-#button1:hover {
+#buttonAdd:hover {
     background-color: var(--color-brand-hover);
 }
 

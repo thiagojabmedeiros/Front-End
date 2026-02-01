@@ -19,7 +19,7 @@
     line-height: var(--lh-label);
 }
 
-.paragraph {
+p {
     font-weight: var(--fw-paragraph);
     font-size: var(--fs-paragraph);
     line-height: var(--lh-paragraph);
