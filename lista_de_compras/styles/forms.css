@@ -1,5 +1,5 @@
 /*form properties*/
-form {
+#form1 {
     border: solid red;
     display: grid;
     gap: 16px;
@@ -37,7 +37,7 @@ form {
 }
 
 /*button propeties*/
-button {
+#button1 {
     width: 326px;
     height: 44px;
     padding-block: 12px;
@@ -50,18 +50,18 @@ button {
     font-weight: 600;
     transition: 500ms;
 }
-button:hover {
+#button1:hover {
     background-color: var(--color-brand-hover);
 }
 
 @media (width >= 1366px) {
-    form {
+    #form1 {
         display: flex;
     }
     #newItem {
         width: 451px;
     }
-    button {
+    #button1 {
         width: 160px;
         height: 44px;
     }

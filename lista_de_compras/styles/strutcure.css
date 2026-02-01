@@ -13,11 +13,6 @@ main {
     margin-inline: auto;
 }
 
-#input {
-    border: solid red;
-    
-}
-
 @media (width >= 1366px) {
     #logo {
         display: flex;
