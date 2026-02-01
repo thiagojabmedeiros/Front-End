@@ -58,7 +58,7 @@ newGuest2.classList.add("guest")
 
 const newName2 = document.createElement("span")
 newName2.textContent = "Marcos"
-newGuest2.append(newName2)
+newGuest2.appendChild(newName2)
 
 lists.prepend(newGuest2)
 

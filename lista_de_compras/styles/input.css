@@ -5,6 +5,7 @@ ul {
     gap: 12px;
     border-block: 1px solid var(--border-primary);
 }
+
 li > label {
     background-color: var(--bg-secondary);
 
@@ -37,6 +38,11 @@ li > label {
         margin-right: auto;
     } 
     & button {
+        background: url("/lista_de_compras/assets/icons/trash.svg");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+
         height: 16px;
         width: 16px;
         border: none;
@@ -55,6 +61,7 @@ li > label {
     width: 100%;
     border-radius: 12px;
     background-color: var(--color-danger);
+    
     & label {
         color: var(--always-white);
         margin-right: auto;
