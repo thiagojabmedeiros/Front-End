@@ -57,7 +57,7 @@ input[type="text"]:focus::placeholder {
 }
 
 @media (width >= 1366px) {
-    #form1 {
+    form {
         display: flex;
     }
     #newItem {
