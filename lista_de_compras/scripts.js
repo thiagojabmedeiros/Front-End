@@ -1,8 +1,30 @@
+// creating const to store main elements
 const form = document.querySelector("form")
 const inputAdd = document.querySelector("#newItem")
 const buttonAdd = document.querySelector("form button")
 const ul = document.querySelector("ul")
 let index = 0
+
+
+// adding message in the screen
+const removedItemMessage = document.querySelector(".removedItem")
+function showRemovedItemMessage() {
+    // add the class in the element
+    removedItemMessage.classList.add("show")
+
+    // settimeout() function creates a delay to something you want to happens with mileseconds time waiting
+    setTimeout(() => {
+        removedItemMessage.classList.remove("show")
+    }, 5000) 
+}
+
+// removing the message from screen
+const removedItemCloseButton = removedItemMessage.querySelector("button")
+removedItemCloseButton.addEventListener("click", () => {
+    // remove the class out the element
+    removedItemMessage.classList.remove("show")
+})
+
 
 // adding elements
 form.addEventListener("submit", (e) => {
@@ -40,6 +62,7 @@ form.addEventListener("submit", (e) => {
     const trashButton = document.createElement("button")
     trashButton.type = "button"
     trashButton.addEventListener("click", () => {
+        showRemovedItemMessage()
         li.remove()
         index--
     })
@@ -56,16 +79,3 @@ form.addEventListener("submit", (e) => {
     // cleaning input value after submit the new item
     inputAdd.value = ""
 })
-
-// adding message in the screen
-const removedItemMessage = document.querySelector(".removedItem")
-function showRemovedItemMessage() {
-    removedItemMessage.classList.add("show")
-}
-
-// removing the message from screen
-const removedItemCloseButton = removedItemMessage.querySelector("button")
-removedItemCloseButton.addEventListener("click", () => {
-    removedItemMessage.classList.remove("show")
-})
-
