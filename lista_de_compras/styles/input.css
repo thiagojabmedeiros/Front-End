@@ -51,7 +51,7 @@ li > label {
 }
 
 .removedItem {
-    display: flex;
+    display: none;
     gap: 8px;
     align-items: center;
     padding-inline: 12px;
@@ -59,8 +59,7 @@ li > label {
     height: 44px;
     width: 100%;
     border-radius: 12px;
-    background-color: var(--color-danger);
-    
+    background-color: var(--color-danger); 
     & label {
         color: var(--always-white);
         margin-right: auto;
@@ -75,6 +74,10 @@ li > label {
         border: none;
         cursor: pointer;
     }
+}
+
+.removedItem.show {
+    display: flex;
 }
 
 @media (width >= 1366px) {
