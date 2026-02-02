@@ -37,7 +37,7 @@ form.addEventListener("submit", (e) => {
         alert("This is not a valid input")
         return
     }
-    const safeId = newItemName.replaceAll(" ", "") + index
+    const safeId = newItemName.replaceAll(" ", "")
 
     // creating list element
     const li = document.createElement("li")
