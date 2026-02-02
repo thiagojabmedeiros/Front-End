@@ -3,6 +3,8 @@ const form = document.querySelector("form")
 const inputAdd = document.querySelector("#newItem")
 const buttonAdd = document.querySelector("form button")
 const ul = document.querySelector("ul")
+
+ul.addEventListener()
 let index = 0
 
 
@@ -15,7 +17,7 @@ function showRemovedItemMessage() {
     // settimeout() function creates a delay to something you want to happens with mileseconds time waiting
     setTimeout(() => {
         removedItemMessage.classList.remove("show")
-    }, 5000) 
+    }, 4000) 
 }
 
 // removing the message from screen
