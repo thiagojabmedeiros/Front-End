@@ -61,6 +61,8 @@ li > label {
     width: 100%;
     border-radius: 12px;
     background-color: var(--color-danger); 
+    transform: translateY(10px);
+    transition: 500ms, transform 1s;
     & label {
         color: var(--always-white);
         margin-right: auto;
@@ -79,7 +81,8 @@ li > label {
 
 .removedItem.show {
     opacity: 1;
-    transition: 1s;
+    transform: translateY(-10px); 
+    transition: 1s, transform 1s;
 }
 
 @media (width >= 1366px) {
