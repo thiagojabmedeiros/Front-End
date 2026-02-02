@@ -25,14 +25,15 @@ li > label {
         width: 16px;
         border: 2px solid var(--border-primary);
         border-radius: 6px;
-        transition: 400ms;
     }
     & input[type="checkbox"]:hover {
         border: 2px solid var(--border-hover);
     }
     & input[type="checkbox"]:checked {
-        background-color: var(--color-brand);
-        border: 2px solid var(--color-brand);
+        background-image: url("/lista_de_compras/assets/icons/selectedInput.svg");
+        background-position: center;
+        background-size: fill;
+        border: none;
     }
     & p {
         margin-right: auto;
@@ -40,13 +41,11 @@ li > label {
     & button {
         background: url("/lista_de_compras/assets/icons/trash.svg");
         background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-
-        height: 16px;
-        width: 16px;
+        background-size: fill;
+        background-color: var(--bg-secondary);
+        height: 20px;
+        width: 20px;
         border: none;
-        background: none;
         cursor: pointer;
     }
 }
@@ -67,7 +66,12 @@ li > label {
         margin-right: auto;
     }
     & button {
-        background: none;
+        background-image: url("/lista_de_compras/assets/icons/delete-white.svg");
+        background-position: center;
+        background-size: fill;
+        background-color: var(--color-danger);
+        height: 12px;
+        width: 12px;
         border: none;
         cursor: pointer;
     }
