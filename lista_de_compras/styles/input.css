@@ -62,7 +62,7 @@ li > label {
     border-radius: 12px;
     background-color: var(--color-danger); 
     transform: translateY(10px);
-    transition: 500ms, transform 1s;
+    transition: 200ms, transform 500ms;
     & label {
         color: var(--always-white);
         margin-right: auto;

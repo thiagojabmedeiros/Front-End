@@ -4,7 +4,6 @@ const inputAdd = document.querySelector("#newItem")
 const buttonAdd = document.querySelector("form button")
 const ul = document.querySelector("ul")
 
-ul.addEventListener()
 let index = 0
 
 
