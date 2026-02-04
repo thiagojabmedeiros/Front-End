@@ -26,6 +26,20 @@ removedItemCloseButton.addEventListener("click", () => {
     removedItemMessage.classList.remove("show")
 })
 
+// creating id, value elements: 
+function creatingIdValue(name) {
+    let splitNameId = name.split(" ")
+    let nameId = ""
+    for(i = 0; i < splitNameId.length; i++) {
+        if (i == 0){
+           nameId += `${(splitNameId[i][0]).toLowerCase() + splitNameId[i].slice(1, splitNameId[i].length)}`
+        }
+        else {
+            nameId += `${splitNameId[i][0].toUpperCase() + splitNameId[i].slice(1, splitNameId[i].length)}`
+        }
+    }
+    return nameId
+}
 
 // adding elements
 form.addEventListener("submit", (e) => {
@@ -38,18 +52,18 @@ form.addEventListener("submit", (e) => {
         alert("This is not a valid input")
         return
     }
-    const safeId = newItemName.replaceAll(" ", "")
+    const safeIdValue = creatingIdValue(newItemName)
 
     // creating list element
     const li = document.createElement("li")
 
     // creating label
     const label = document.createElement("label")
-    label.htmlFor = safeId
+    label.htmlFor = safeIdValue
 
     // creating input checkbox
     const inputCheck = document.createElement("input")
-    inputCheck.id = safeId
+    inputCheck.id = safeIdValue
     inputCheck.value = newItemName
     index++
     inputCheck.name = "item" + index
