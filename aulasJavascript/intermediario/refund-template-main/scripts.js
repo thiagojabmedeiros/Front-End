@@ -3,12 +3,13 @@ const form = document.querySelector("form")
 const expense = document.getElementById("expense")
 const category = document.getElementById("category")
 const amount = document.getElementById("amount")
-
 // list
 const expenseList = document.querySelector("ul")
 const expenseCountSpan = document.querySelector("aside header p span")
 const expenseCountH2 = document.querySelector("aside header p h2")
+const expenseAmountH2 = document.querySelector("aside header h2")
 let totalCount = 0
+
 
 // catching the input value
 amount.addEventListener("input", () => {
@@ -25,7 +26,7 @@ function formatCurrencyBRL(x) {
         currency: "BRL",
     })
     return x
-} 
+}
 
 // form functions
 form.addEventListener("submit", (e) => {
@@ -76,6 +77,10 @@ function createExpense(x) {
         expenseRemoveIcon.setAttribute("src", `./img/remove.svg`)
         expenseRemoveIcon.setAttribute("alt", "remover")
         expenseRemoveIcon.classList.add("remove-icon")
+        expenseRemoveIcon.addEventListener("click", (event) => {
+            expenseItem.remove()
+            expenseCount()
+        })
 
         // adding icon to list
         expenseItem.append(expenseIcon)
@@ -84,10 +89,12 @@ function createExpense(x) {
         expenseItem.append(expenseRemoveIcon)
         expenseList.append(expenseItem)
 
+        expense.value = ""
+        category.value = ""
+        amount.value = ""
         expenseCount()
-        totalCountExpense(x)
     } catch (error) {
-        alert("Não foi possível criar o element")
+        alert("Não foi possível criar o elemento")
         console.log(error)
     }
 }
@@ -95,16 +102,38 @@ function createExpense(x) {
 // expense's count
 function expenseCount() {
     try {
+        let totalAmount = 0
         let itemCount = expenseList.children
         expenseCountSpan.innerText = `${itemCount.length} ${itemCount.length > 1 ? "despesas" : "despesa"}`
+
+        if (itemCount === 0) {
+            expenseAmountH2.innerHTML = `<small>R$/small>0,00`
+        }
+        else {
+            for (let i = 0; i < itemCount.length; i++) {
+                // selecting the element
+                const expenseAmount = itemCount[i].querySelector(".expense-amount").textContent
+                // storing the amount in a variable
+                let value = expenseAmount.toUpperCase().replace(/[^\d]/g, "").replace(",", ".")
+                
+                value = parseFloat(value) / 100
+                // verifying if the it is a number
+                if (isNaN(value)) {
+                    alert("não foi possível salvar o número")
+                    break
+                }
+
+                // adding the total
+                totalAmount += value
+                expenseAmountH2.innerHTML = `<small>R$</small>${totalAmount.toLocaleString("pt-br", {
+                    style: "currency",
+                    currency: "BRL"
+                }).toLocaleUpperCase().replace("R$", "")}`
+        }}
+
+
     } catch(error) {
         alert("Não foi possível contar as despesas")
         console.log(error)
     }
-}
-
-// total expense count
-function totalCountExpense(x) {
-    totalCount = totalCount + x.amount
-    expenseCountH2.innerHTML = `<small>R$</small>${totalCount}`
 }
