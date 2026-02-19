@@ -1,4 +1,4 @@
-// comentários se escrevem com "//" no início da linha
+s// comentários se escrevem com "//" no início da linha
 
 /* 
 comentários de multiplas 
