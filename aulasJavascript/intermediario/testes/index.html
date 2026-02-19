@@ -1,20 +1,34 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>teste</title>
+    <title>Document</title>
 </head>
 <body>
-    <h1>Generate a random Number</h1>
-    <label for="max">Choose max:</label>
-    <input id="max" type="text"><br><br>
-    <label for="min">Choose min:</label>
-    <input id="min" type="text"><br><br>
-    <button>Generate</button><br>
+    <form action="#">
+        <fieldset>
+            <legend>testing forms</legend><br>
 
-    <h1>Random Number</h1>
-    <p id="randomNum"></p>
+            <div>
+                <label for="firstNumber">First number</label>
+                <input id ="firstNumber" type="text" placeholder="type the first number" required>
+            </div><br>
+
+            <div>
+                <label for="secondNumber">Second number</label>
+                <input id="secondNumber" type="text" placeholder="type the second number" required>
+            </div><br>
+
+            <button type="submit">RANDOM</button>
+        </fieldset>
+    </form>
+
+    <div id="result">
+        <h1>The random number is:</h1>
+        <h2></h2>
+    </div>
+
     <script src="index.js"></script>
 </body>
 </html>
