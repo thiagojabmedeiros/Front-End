@@ -39,16 +39,20 @@
     /* font weights */
     --fw-extrabold: 800;
     --fw-bold: 700;
+    --fw-medium: 500;
 
-    /* Sora font-sizes */
+    /* Sora */
+    --ff-sora: "Sora", sans-serif;
     --fs-lg-sora: 72px;
     --fs-md-sora: 40px;
     --fs-sm-sora: 32px;
 
-    /* Roboto Mono font-sizes */
+    /* Roboto Mono */
+    --ff-roboto-mono: "Roboto Mono", monospace;
     --fs-overl-roboto: 16px;
 
-    /* Roboto Flex font-sizes */
+    /* Roboto Flex */
+    --ff-roboto-flex: "Roboto Flex", sans-serif;
     --fs-plg-roboto: 16px;
     --fs-pmd-roboto: 14px;
     --fs-psm-roboto: 12px;
