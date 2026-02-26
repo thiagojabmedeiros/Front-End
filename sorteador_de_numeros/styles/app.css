@@ -1,4 +1,15 @@
 #appButton {
+    position: relative;
+    & div {
+        opacity: 0;
+        background-image: linear-gradient(to right, var(--accent-pink), var(--accent-blue), var(--accent-green), var(--accent-lime), var(--accent-red));
+        position: absolute;
+        border-radius: 8px;
+        width: 101.5%;
+        height: 60px;
+        bottom: 0;
+        transition: 500ms;
+    }
     & button {
         color: white;
         background-color: var(--background-tertiary);
@@ -11,19 +22,31 @@
         gap: 8px;
         justify-content: center;
         align-items: center;
+        position: relative;
+        z-index: 1;
+        margin-bottom: 2px;
+        margin-left: 2px;
     }
 }
+#appButton:hover {
+    & div {
+        opacity: 1;
+    }
+}
+
 #selectQuantity, #selectStart, #selectEnd {
     display: grid;
     justify-items: center;
     position: relative;
     & div {
+        opacity: 0;
+        background-image: linear-gradient(to right, var(--accent-pink), var(--accent-blue), var(--accent-green), var(--accent-lime), var(--accent-red));
         position: absolute;
         border-radius: 8px;
         width: 86px;
         height: 56px;
         bottom: 0;
-        transition: 1000ms;
+        transition: 500ms;
     }
     & label {
         color: var(--content-primary);
@@ -44,7 +67,7 @@
         transition: 300ms;
         position: relative;
         z-index: 1;
-        margin-bottom: 1.4px;
+        margin-bottom: 2px;
     }
     & input:focus {
         outline: none;
@@ -53,7 +76,7 @@
 }
 #selectQuantity:hover, #selectStart:hover, #selectEnd:hover {
     & div {
-        background-image: linear-gradient(to right, var(--accent-pink), var(--accent-blue), var(--accent-green), var(--accent-lime), var(--accent-red));
+        opacity: 1;
     }
     & label {
         color: var(--accent-pink);
