@@ -24,10 +24,12 @@ section {
     gap: auto;
 }
 #titleText {
+    display: grid;
+    gap: 12px;
     grid-area: A;
     border: solid red;
     height: 224px;
-    width: 508px;
+    width: 513px;
 }
 #infoText {
     grid-area: C;
@@ -35,6 +37,26 @@ section {
     height: 150px;
     width: 386px;
     margin-top: auto;
+    display: grid;
+    gap: 36px;
+    & div {
+        border: solid red;
+        display: grid;
+        grid-template-areas: 
+        "A B"
+        "A C";
+
+        & img {
+            margin-right: 8px;
+            grid-area: A;
+        }
+        & h5 {
+            grid-area: B;
+        }
+        & p {
+            grid-area: C;
+        }
+    }
 }
 #app {
     grid-area: B;
@@ -60,6 +82,7 @@ section {
         width: 319px;
         height: 785px;
         margin-top: 46px;
+        margin-bottom: 44px;
         display: grid;
         grid-template-areas: 
         "A"

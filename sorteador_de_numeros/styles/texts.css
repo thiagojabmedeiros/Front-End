@@ -5,6 +5,14 @@
     font-weight: var(--fw-extrabold);
     line-height: var(--lh-130);
 }
+@media (width < 1300px) {
+    .soraLg {
+        font-family: var(--ff-sora);
+        font-size: var(--fs-md-sora);
+        font-weight: var(--fw-extrabold);
+        line-height: var(--lh-130);
+    }
+}
 .soraMd {
     font-family: var(--ff-sora);
     font-size: var(--fs-md-sora);
