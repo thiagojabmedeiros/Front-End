@@ -16,8 +16,18 @@
 #selectQuantity, #selectStart, #selectEnd {
     display: grid;
     justify-items: center;
+    position: relative;
+    & div {
+        position: absolute;
+        border-radius: 8px;
+        width: 86px;
+        height: 56px;
+        bottom: 0;
+        transition: 1000ms;
+    }
     & label {
         color: var(--content-primary);
+        transition: 300ms;
     }
     & input {
         font-family: var(--ff-sora);
@@ -26,14 +36,30 @@
         line-height: var(--lh-130);
         text-align: center;
         color: white;
-        width: 86px;
-        height: 56px;
+        width: 82px;
+        height: 52px;
         border: none;
         border-radius: 8px;
         background-color: var(--background-secondary);
+        transition: 300ms;
+        position: relative;
+        z-index: 1;
+        margin-bottom: 1.4px;
     }
     & input:focus {
         outline: none;
+        background-color: var(--background-tertiary);
+    }
+}
+#selectQuantity:hover, #selectStart:hover, #selectEnd:hover {
+    & div {
+        background-image: linear-gradient(to right, var(--accent-pink), var(--accent-blue), var(--accent-green), var(--accent-lime), var(--accent-red));
+    }
+    & label {
+        color: var(--accent-pink);
+    }
+    & input {
+        background-color: var(--background-tertiary);
     }
 }
 #selectRepeat {
