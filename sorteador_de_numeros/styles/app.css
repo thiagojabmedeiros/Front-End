@@ -20,8 +20,20 @@
         color: var(--content-primary);
     }
     & input {
+        font-family: var(--ff-sora);
+        font-size: var(--fs-sm-sora);
+        font-weight: var(--fw-bold);
+        line-height: var(--lh-130);
+        text-align: center;
+        color: white;
         width: 86px;
         height: 56px;
+        border: none;
+        border-radius: 8px;
+        background-color: var(--background-secondary);
+    }
+    & input:focus {
+        outline: none;
     }
 }
 #selectRepeat {
@@ -35,7 +47,8 @@
         align-items: center;
         gap: 4px;
         border-radius: 50px;
-        background-image: linear-gradient(to right, var(--accent-pink), var(--accent-blue));
+        background-color: var(--content-tertiary);
+        /* background-image: linear-gradient(to right, var(--accent-pink), var(--accent-blue)); */
     }
     & label {
         font-family: "Inter", sans-serif;
@@ -45,7 +58,6 @@
         color: var(--content-primary);
     }
 }
-
 #inputNums {
     display: flex;
     gap: 12px;
