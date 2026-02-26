@@ -19,49 +19,59 @@
     </header>
     <section>
         <div id="titleText">
-            <h6 class="robotoMono">ONLINE - GRATUITO</h6>
-            <h1 class="soraLg">SORTEADOR DE NÚMEROS</h1>
+            <h6 class="robotoMono contentSecondary">ONLINE - GRATUITO</h6>
+            <h1 class="soraLg contentPrimary">SORTEADOR DE NÚMEROS</h1>
         </div>
+
         <div id="infoText">
             <div>
                 <img src="\sorteador_de_numeros\assets\profile.svg" alt="question">
-                <h5 class="robotoFlexPMd">Como funciona o sorteador de números?</h5>
-                <p class="robotoFlexPSm">O sorteador utiliza um algoritmo de geração aleatória para criar números dentro do intervalo especificado pelo usuário.</p>
+                <h5 class="robotoFlexPMd contentBrand">Como funciona o sorteador de números?</h5>
+                <p class="robotoFlexPSm contentSecondary">O sorteador utiliza um algoritmo de geração aleatória para criar números dentro do intervalo especificado pelo usuário.</p>
             </div>
             <div>
                 <img src="\sorteador_de_numeros\assets\profile.svg" alt="question">
-                <h5 class="robotoFlexPMd">Posso escolher o intervalo dos números?</h5>
-                <p class="robotoFlexPSm">Sim, você pode definir os valores mínimo e máximo para o intervalo dos números sorteados.</p>
+                <h5 class="robotoFlexPMd contentBrand">Posso escolher o intervalo dos números?</h5>
+                <p class="robotoFlexPSm contentSecondary">Sim, você pode definir os valores mínimo e máximo para o intervalo dos números sorteados.</p>
             </div>
 
         </div>
 
         <div id="app">
             <div>
-                <h3 class="robotoFlexLMd">QUERO SORTEAR:</h3>
-                <p class="robotoFlexPLg">defina o intervalo e a quantidade de números, clique em "Sortear" e veja os resultados na tela. É rápido e fácil!</p>
+                <h3 class="robotoFlexLMd contentPrimary">QUERO SORTEAR:</h3>
+                <p class="robotoFlexPLg contentSecondary">defina o intervalo e a quantidade de números, clique em "Sortear" e veja os resultados na tela. É rápido e fácil!</p>
             </div>
             
             <form action="#">
                 <fieldset id="appForm">
-                    <div id="inputNums">
-                        <label class="robotoFlexLMd" for="numbers">NÚMEROS</label>
-                        <input id="numbers" type="text">
-                        <br>
-                        <label class="robotoFlexLMd" for="start">DE</label>
-                        <input id="start" type="text">
-                        <br>
-                        <label class="robotoFlexLMd" for="end">ATÉ</label>
-                        <input id="end" type="text">
-                        <div id="twoNums">
-                            <input id="off" value="off" name="twoNums" type="radio">
-                            <input id="on" value="on" name="twoNums" type="radio">
+                    <div id="inputForm">
+                        <div id="inputNums">
+                            <div id="selectQuantity">
+                                <label class="robotoFlexLMd" for="numbers">NÚMEROS</label>
+                                <input id="numbers" type="text">
+                            </div>
+                            <div id="selectStart">
+                                <label class="robotoFlexLMd" for="start">DE</label>
+                                <input id="start" type="text">
+                            </div>
+                            <div id="selectEnd">
+                                <label class="robotoFlexLMd" for="end">ATÉ</label>
+                                <input id="end" type="text">
+                            </div>
+                        </div>
+
+                        <div id="selectRepeat">
+                            <div>
+                                <input id="off" value="off" name="repeatNums" type="radio">
+                                <input id="on" value="on" name="repeatNums" type="radio">
+                            </div>
                             <label for="on">Não repetir número</label>
                         </div>
                     </div>
                     
                     <div id="appButton">
-                        <button class="robotoFlexLMd" type="submit">Sortear <img src="\sorteador_de_numeros\assets\direction.svg" alt="direction"></button>
+                        <button class="robotoFlexLMd" type="submit">SORTEAR<img src="\sorteador_de_numeros\assets\direction.svg" alt="direction"></button>
                     </div>
                 </fieldset>
             </form>

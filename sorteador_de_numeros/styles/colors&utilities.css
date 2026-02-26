@@ -1,0 +1,12 @@
+body {
+    background-color: var(--background-primary);
+}
+.contentPrimary {
+    color: var(--content-primary);
+}
+.contentSecondary {
+    color: var(--content-secondary);
+}
+.contentBrand {
+    color: var(--content-brand);
+}
