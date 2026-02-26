@@ -35,7 +35,37 @@
             </div>
 
         </div>
-        <div id="app">App</div>
+
+        <div id="app">
+            <div>
+                <h3 class="robotoFlexLMd">QUERO SORTEAR:</h3>
+                <p class="robotoFlexPLg">defina o intervalo e a quantidade de números, clique em "Sortear" e veja os resultados na tela. É rápido e fácil!</p>
+            </div>
+            
+            <form action="#">
+                <fieldset id="appForm">
+                    <div id="inputNums">
+                        <label class="robotoFlexLMd" for="numbers">NÚMEROS</label>
+                        <input id="numbers" type="text">
+                        <br>
+                        <label class="robotoFlexLMd" for="start">DE</label>
+                        <input id="start" type="text">
+                        <br>
+                        <label class="robotoFlexLMd" for="end">ATÉ</label>
+                        <input id="end" type="text">
+                        <div id="twoNums">
+                            <input id="off" value="off" name="twoNums" type="radio">
+                            <input id="on" value="on" name="twoNums" type="radio">
+                            <label for="on">Não repetir número</label>
+                        </div>
+                    </div>
+                    
+                    <div id="appButton">
+                        <button class="robotoFlexLMd" type="submit">Sortear <img src="\sorteador_de_numeros\assets\direction.svg" alt="direction"></button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
     </section>
     <script src="index.js"></script>
 </body>

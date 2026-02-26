@@ -38,7 +38,7 @@ section {
     width: 386px;
     margin-top: auto;
     display: grid;
-    gap: 36px;
+    gap: 29px;
     & div {
         border: solid red;
         display: grid;
@@ -60,11 +60,17 @@ section {
 }
 #app {
     grid-area: B;
+    display: grid;
+    gap: 40px;
     border: solid red;
     height: 344px;
     width: 482px;
     margin-left: auto;
     margin-block: auto;
+}
+#appForm {
+    display: grid;
+    gap: 40px;
 }
 
 @media (width < 1300px) {

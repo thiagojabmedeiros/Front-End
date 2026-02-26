@@ -5,14 +5,7 @@
     font-weight: var(--fw-extrabold);
     line-height: var(--lh-130);
 }
-@media (width < 1300px) {
-    .soraLg {
-        font-family: var(--ff-sora);
-        font-size: var(--fs-md-sora);
-        font-weight: var(--fw-extrabold);
-        line-height: var(--lh-130);
-    }
-}
+
 .soraMd {
     font-family: var(--ff-sora);
     font-size: var(--fs-md-sora);
@@ -64,4 +57,19 @@
     font-size: var(--fs-lsm-roboto);
     font-weight: var(--fw-bold);
     line-height: var(--lh-150);
+}
+
+@media (width < 1300px) {
+    .soraLg {
+        font-family: var(--ff-sora);
+        font-size: var(--fs-md-sora);
+        font-weight: var(--fw-extrabold);
+        line-height: var(--lh-130);
+    }
+    .robotoFlexPLg {
+        font-family: var(--ff-roboto-flex);
+        font-size: var(--fs-pmd-roboto);
+        font-weight: var(--fw-medium);
+        line-height: var(--lh-150);
+    }
 }
