@@ -10,3 +10,6 @@ body {
 .contentBrand {
     color: var(--content-brand);
 }
+.none {
+    display: none;
+}
