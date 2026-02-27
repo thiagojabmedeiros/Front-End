@@ -85,6 +85,9 @@
         background-color: var(--background-tertiary);
     }
 }
+#selectQuantity:focus-within div, #selectStart:focus-within div, #selectEnd:focus-within div {
+    opacity: 1;
+}
 #selectRepeat {
     display: flex;
     align-items: center;
