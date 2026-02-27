@@ -7,6 +7,7 @@
     height: 58px;
     width: 482px;
 }
+/* result numbers div */
 #resultNumbers {
     display: none;
     gap: 4px;
@@ -18,9 +19,57 @@
     justify-self: center;
 }
 
+/* box class */
+.box {
+    height: 100px;
+    width: 100px;
+    border-radius: 28px;
+    background-color: var(--content-brand);
+    position: absolute;
+    animation-name: boxGrow, boxRotate;
+    animation-duration: 1.5s, 4s;
+    animation-fill-mode: forwards;
+
+}
+/* box animation */
+@keyframes boxGrow {
+    from {
+        height: 0px;
+        width: 0px;
+    }
+    to {
+        height: 100px;
+        width: 100px;
+    }
+}
+@keyframes boxRotate {
+    from {
+        transform: rotate(500deg);
+    }
+    to {
+        transform: rotate(45deg);
+    }
+}
+
 .robotoMonoResult {
+    font-size: 0;
+    position: absolute;
     font-family: var(--ff-roboto-mono);
-    font-size: 48px;
     font-weight: bold;
     line-height: 1.5;
+    animation-name: numberGrow;
+    animation-delay: 1.5s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes numberGrow {
+    from {
+        opacity: 0;
+        font-size: 0;
+    }
+    to {
+        opacity: 1;
+        font-size: 48px;
+    }
 }

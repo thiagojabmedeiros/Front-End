@@ -98,5 +98,4 @@ const button = document.querySelector("#appButton button")
 // changing button content
 function changeButtonText() {
     button.innerHTML = `SORTEAR NOVAMENTE <img src="/sorteador_de_numeros/assets/direction.svg" alt="direction">`
-    form.style.border = "red solid"
 }
