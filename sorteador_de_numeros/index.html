@@ -38,18 +38,29 @@
 
         </div>
 
-        <div id="app">
-            <div>
+        <div id="app">            
+            <div id="inputText">
                 <h3 class="robotoFlexLMd contentPrimary">QUERO SORTEAR:</h3>
                 <p class="robotoFlexPLg contentSecondary">defina o intervalo e a quantidade de números, clique em "Sortear" e veja os resultados na tela. É rápido e fácil!</p>
             </div>
-            
+
+            <div id="resultText">
+                <h3 class="robotoFlexLMd contentPrimary">RESULTADO DO SORTEIO</h3>
+                <p class="robotoMono contentSecondary">X° RESULTADO</p>
+            </div>
+
+            <div id="resultNumbers">
+                <h2 class="contentBrand robotoMonoResult">1</h2>
+                <h2 class="contentBrand robotoMonoResult">2</h2>
+                <h2 class="contentBrand robotoMonoResult">3</h2>
+            </div>
+
             <form action="#">
                 <fieldset id="appForm">
                     <div id="inputForm">
                         <div id="inputNums">
                             <div id="selectQuantity">
-                                <div class="box"></div>
+                                <div></div>
                                 <label class="robotoFlexLMd" for="numbers">NÚMEROS</label>
                                 <input id="numbers" type="text">
                             </div>

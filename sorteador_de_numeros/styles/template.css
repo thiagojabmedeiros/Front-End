@@ -60,6 +60,7 @@ section {
     width: 482px;
     margin-left: auto;
     margin-block: auto;
+    border: blue solid;
 }
 #appForm {
     display: grid;
@@ -71,6 +72,7 @@ section {
     gap: 12px;
 }
 
+/* media queries */
 @media (width < 1300px) {
     header {
         height: 84px;

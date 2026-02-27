@@ -2,7 +2,8 @@ const form = document.querySelector("form")
 const quantity = document.querySelector("#numbers")
 const start = document.getElementById("start")
 const end = document.getElementById("end")
-const button = document.querySelector("#appButton button")
+
+
 
 quantity.value = 1
 start.value = 1
@@ -42,6 +43,9 @@ form.addEventListener("submit", (e) => {
     e.preventDefault()
     try {
         removeApp()
+        showTextResult()
+        showResultNumbers()
+        changeButtonText()
         let randomNumber1 = Math.floor(Math.random() * Number(end.value - start.value)) + Number(start.value)
         let randomNumber2 = Math.floor(Math.random() * Number(end.value - start.value)) + Number(start.value)
         let randomNumber3 = Math.floor(Math.random() * Number(end.value - start.value)) + Number(start.value)
@@ -66,6 +70,33 @@ form.addEventListener("submit", (e) => {
     }
 })
 
+// const that disappear when random number shows
+const inputText = document.querySelector("#inputText")
+const inputForm = document.querySelector("#inputForm")
+const inputNums = document.querySelector("#inputNums")
+// function to remove them
 function removeApp() {
+    inputText.style.display = "none"
+    inputForm.style.display = "none"
+    inputNums.style.display = "none"
+}
 
+// const that appear to show result
+const resultText = document.querySelector("#resultText")
+const resultNumbers = document.querySelector("#resultNumbers")
+// function to show them
+function showTextResult() {
+    resultText.style.display = "flex"
+}
+function showResultNumbers() {
+    resultNumbers.style.display = "flex"
+}
+
+
+// button element
+const button = document.querySelector("#appButton button")
+// changing button content
+function changeButtonText() {
+    button.innerHTML = `SORTEAR NOVAMENTE <img src="/sorteador_de_numeros/assets/direction.svg" alt="direction">`
+    form.style.border = "red solid"
 }

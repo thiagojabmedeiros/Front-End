@@ -1,3 +1,4 @@
+/* button */
 #appButton {
     position: relative;
     & div {
@@ -28,12 +29,16 @@
         margin-left: 2px;
     }
 }
+
+/* button transtions */
 #appButton:hover {
     & div {
         opacity: 1;
     }
 }
 
+
+/* inputs */
 #selectQuantity, #selectStart, #selectEnd {
     display: grid;
     justify-items: center;
@@ -74,21 +79,7 @@
         background-color: var(--background-tertiary);
     }
 }
-#selectQuantity:hover, #selectStart:hover, #selectEnd:hover {
-    & div {
-        opacity: 1;
-    }
-    & label {
-        color: var(--accent-pink);
-    }
-    & input {
-        background-color: var(--background-tertiary);
-    }
-}
-#selectQuantity:focus-within div, #selectStart:focus-within div, #selectEnd:focus-within div {
-    opacity: 1;
-}
-#selectRepeat {
+#selectRepeat { 
     display: flex;
     align-items: center;
     gap: 8px;
@@ -110,7 +101,31 @@
         color: var(--content-primary);
     }
 }
+
+/* input transitions */
+#selectQuantity:hover, #selectStart:hover, #selectEnd:hover {
+    & div {
+        opacity: 1;
+    }
+    & label {
+        color: var(--accent-pink);
+    }
+    & input {
+        background-color: var(--background-tertiary);
+    }
+}
+#selectQuantity:focus-within div, #selectStart:focus-within div, #selectEnd:focus-within div {
+    opacity: 1;
+}
+#selectQuantity:focus-within label, #selectStart:focus-within label, #selectEnd:focus-within label {
+    color: var(--accent-pink);
+}
+
 #inputNums {
+    transition: 1s;
     display: flex;
     gap: 12px;
+}
+#inputText {
+    display: initial;
 }
