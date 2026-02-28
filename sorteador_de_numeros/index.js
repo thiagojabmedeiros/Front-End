@@ -50,17 +50,26 @@ form.addEventListener("submit", (e) => {
         removeApp()
         showTextResult()
         showResultNumbers()
-        changeButtonText()
+        removeButton()
 
         // conditions to call functions
         if (Number(quantity.value) === 1) {
             onlyOneRandom()
+            setTimeout(() => {
+                addButton()
+            }, 4000)
         }
         else if (Number(quantity.value) === 2) {
             twoRandoms()
+            setTimeout(() => {
+                addButton()
+            }, 8000)
         }
         else if (Number(quantity.value) === 3) {
             threeRandoms()
+            setTimeout(() => {
+                addButton()
+            }, 12000)
         }
         else {
             return null
@@ -100,10 +109,14 @@ function showResultNumbers() {
 
 
 // button element
-const button = document.querySelector("#appButton button")
+const appButton = document.querySelector("#appButton")
+const newResultButton = document.querySelector("#newResultButton")
 // changing button content
-function changeButtonText() {
-    button.innerHTML = `SORTEAR NOVAMENTE <img src="/sorteador_de_numeros/assets/direction.svg" alt="direction">`
+function removeButton() {
+    appButton.style.display = "none"
+}
+function addButton() {
+    newResultButton.style.display = "initial"
 }
 
 // changing numbers text

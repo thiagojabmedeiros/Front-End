@@ -29,14 +29,110 @@
         margin-left: 3.3px;
     }
 }
-
 /* button transtions */
 #appButton:hover {
     & div {
         opacity: 1;
     }
+    & button {
+        & img {
+            animation-name: arrowRoll;
+            animation-duration: 3s;
+            animation-fill-mode: forwards;
+            transition: 1s;
+        }
+    }
+}
+/* #appButton:hover button img {
+    animation-name: arrowRoll;
+} */
+@keyframes arrowRoll {
+    0%   { transform: translateX(0); }
+    10%   { transform: translateX(5px); }
+    20%   { transform: translateX(0); }
+    30%   { transform: translateX(5px); }
+    40%   { transform: translateX(0); }
+    50%   { transform: translateX(5px); }
+    60%   { transform: translateX(0); }
+    70%   { transform: translateX(5px); }
+    80%   { transform: translateX(0); }
+    90%   { transform: translateX(5px); }
+    100%   { transform: translateX(0); }
 }
 
+#newResultButton {
+    display: none;
+    position: relative;
+    animation-name: appearButton;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    & div {
+        opacity: 0;
+        background-image: linear-gradient(to right, var(--accent-pink), var(--accent-blue), var(--accent-green), var(--accent-lime), var(--accent-red));
+        position: absolute;
+        border-radius: 8px;
+        width: 101.5%;
+        height: 60px;
+        bottom: 0;
+        transition: 500ms;
+    }
+    & button {
+        position: relative;
+        color: white;
+        background-color: var(--background-tertiary);
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        width: 100%;
+        height: 56px;
+        display: flex;
+        gap: 8px;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+        margin-bottom: 2px;
+        margin-left: 3.3px;
+        & img:nth-of-type(1) {
+            position: absolute;
+            right: 8%;
+        }
+        & img:nth-of-type(2) {
+            position: absolute;
+            right: 6.7%;
+        }
+    }  
+}
+@keyframes appearButton {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#newResultButton:hover {
+    & div {
+        opacity: 1;
+    }
+    & button {
+        & img:nth-of-type(2) {
+            animation-name: spinningCircle;
+            animation-duration: 3s;
+            animation-fill-mode: forwards;
+
+        }
+    }
+}
+@keyframes spinningCircle {
+    from {
+        transform: none;
+    }
+    to {
+        transform: rotate(720deg);
+    }
+}
 
 /* inputs */
 #selectQuantity, #selectStart, #selectEnd {
