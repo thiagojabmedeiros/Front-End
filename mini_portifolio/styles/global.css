@@ -45,7 +45,7 @@
 }
 
 header {
-    background-image: url(/Portifólio/assets/backgrounds/Background_Intro.png);
+    background-image: url(/mini_portifolio/assets/backgrounds/Background_Intro.png);
     background-size: cover;
 }
 
@@ -53,6 +53,6 @@ body {
     background-color: var(--gray-500);
 }
 footer {
-    background-image: url(/Portifólio/assets/backgrounds/Background_Contacts.png);
+    background-image: url(/mini_portifolio/assets/backgrounds/Background_Contacts.png);
     background-size: cover;
 }
