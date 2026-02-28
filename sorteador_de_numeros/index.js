@@ -110,13 +110,16 @@ function showResultNumbers() {
 // button element
 const appButton = document.querySelector("#appButton")
 const newResultButton = document.querySelector("#newResultButton")
-// changing button content
+// remove first button on screen
 function removeButton() {
     appButton.style.display = "none"
 }
+// add new button on screen
 function addButton() {
     newResultButton.style.display = "initial"
 }
+
+// creating variable to reload results
 const reloadResult = newResultButton.querySelector("button")
 reloadResult.addEventListener("click", () => {
     try {
@@ -148,11 +151,17 @@ reloadResult.addEventListener("click", () => {
 })
 // changing numbers text
 const resultRandom = document.querySelectorAll(".resultBox")
+// remove numbers from screen
 function deleteNums() {
     resultRandom[0].style.display = "none"
     resultRandom[1].style.display = "none"
     resultRandom[2].style.display = "none"
 }
+// return a random number
+function generateRandom() {
+    return Math.floor(Math.random() * Number(end.value - start.value)) + start.value
+}
+// generante one random
 function onlyOneRandom() {
     // creating variables
     let randomNumber1 = Math.floor(Math.random() * Number(end.value - start.value)) + Number(start.value)
@@ -164,10 +173,23 @@ function onlyOneRandom() {
     // changing display to appear 
     resultRandom[0].style.display = "flex"
 }
+// variables to create repeat number condition
+const selectRepeat = document.querySelector("#selectRepeat")
+const selectRepeatInput = selectRepeat.querySelector("input")
+// generate two randoms
 function twoRandoms() {
-    // creating variables
-    let randomNumber1 = Math.floor(Math.random() * (Number(end.value - start.value))) + Number(start.value)
-    let randomNumber2 = Math.floor(Math.random() * (Number(end.value - start.value))) + Number(start.value)
+    // creating variables 
+    let randomNumber1 = generateRandom()
+    let randomNumber2 = generateRandom()
+    // checking if they can be equals
+    if (selectRepeatInput.checked){
+        while (randomNumber1 === randomNumber2) {
+            randomNumber2 = generateRandom()
+        }
+        console.log("the numbers can not repeat")
+    } else {
+        console.log("the numbers can repeat")
+    }
     const result1 = resultRandom[0].querySelector("h2")
     const result2 = resultRandom[1].querySelector("h2")
 
@@ -181,11 +203,26 @@ function twoRandoms() {
         resultRandom[1].style.display = "flex"
     }, 4000)
 }
+// generate three randoms
 function threeRandoms() {
     // creating variables
-    let randomNumber1 = Math.floor(Math.random() * Number(end.value - start.value)) + Number(start.value)
-    let randomNumber2 = Math.floor(Math.random() * Number(end.value - start.value)) + Number(start.value)
-    let randomNumber3 = Math.floor(Math.random() * Number(end.value - start.value)) + Number(start.value)
+    let randomNumber1 = generateRandom()
+    let randomNumber2 = generateRandom()
+    let randomNumber3 = generateRandom()
+
+    // checking repeating numbers
+    if (selectRepeatInput.checked) {
+        while (randomNumber1 === randomNumber2) {
+            randomNumber2 = generateRandom()
+        }
+        while (randomNumber1 === randomNumber3 || randomNumber2 === randomNumber3) {
+            randomNumber3 = generateRandom()
+        }
+        console.log("the numbers can not repeat")
+    } else {
+        console.log("the numbers can repeat")
+    }
+
     const result1 = resultRandom[0].querySelector("h2")
     const result2 = resultRandom[1].querySelector("h2")
     const result3 = resultRandom[2].querySelector("h2")
@@ -205,21 +242,4 @@ function threeRandoms() {
         result3.textContent = randomNumber3
         resultRandom[2].style.display = "flex"
     }, 8000)
-}
-
-const selectRepeat = document.querySelector("#selectRepeat")
-const selectRepeatInput = selectRepeat.querySelector("input")
-function verifyRepeat2() {
-    if (selectRepeatInput.checked) {
-        console.log("cant repeat nums")
-    } else {
-        console.log("can repeat nums")
-    }
-}
-function verifyRepeat3() {
-    if (selectRepeatInput.checked) {
-        console.log("cant repeat nums")
-    } else {
-        console.log("can repeat nums")
-    }
 }
