@@ -159,7 +159,7 @@ function deleteNums() {
 }
 // return a random number
 function generateRandom() {
-    return Math.floor(Math.random() * Number(end.value - start.value)) + start.value
+    return Math.floor(Math.random() * Number(end.value - start.value)) + Number(start.value)
 }
 // generante one random
 function onlyOneRandom() {
