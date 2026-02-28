@@ -47,6 +47,7 @@ form.addEventListener("submit", (e) => {
     e.preventDefault()
     try {
         // calling function to execute in a button event
+        deleteNums()
         removeApp()
         showTextResult()
         showResultNumbers()
@@ -57,19 +58,19 @@ form.addEventListener("submit", (e) => {
             onlyOneRandom()
             setTimeout(() => {
                 addButton()
-            }, 4000)
+            }, 5000)
         }
         else if (Number(quantity.value) === 2) {
             twoRandoms()
             setTimeout(() => {
                 addButton()
-            }, 8000)
+            }, 9000)
         }
         else if (Number(quantity.value) === 3) {
             threeRandoms()
             setTimeout(() => {
                 addButton()
-            }, 12000)
+            }, 13000)
         }
         else {
             return null
@@ -121,6 +122,11 @@ function addButton() {
 
 // changing numbers text
 const resultRandom = document.querySelectorAll(".resultBox")
+function deleteNums() {
+    resultRandom[0].style.display = "none"
+    resultRandom[1].style.display = "none"
+    resultRandom[2].style.display = "none"
+}
 function onlyOneRandom() {
     // creating variables
     let randomNumber1 = Math.floor(Math.random() * Number(end.value - start.value)) + Number(start.value)

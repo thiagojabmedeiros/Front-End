@@ -7,8 +7,7 @@
         position: absolute;
         border-radius: 8px;
         width: 101.5%;
-        height: 60px;
-        bottom: 0;
+        height: 62px;
         transition: 500ms;
     }
     & button {
@@ -23,10 +22,11 @@
         gap: 8px;
         justify-content: center;
         align-items: center;
+        place-self: center;
         position: relative;
         z-index: 1;
-        margin-bottom: 2px;
-        margin-left: 3.3px;
+        left: 0.7%;
+        margin-top: 0.6%;
     }
 }
 /* button transtions */
@@ -38,8 +38,8 @@
         & img {
             animation-name: arrowRoll;
             animation-duration: 3s;
-            animation-fill-mode: forwards;
-            transition: 1s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
         }
     }
 }
@@ -72,8 +72,7 @@
         position: absolute;
         border-radius: 8px;
         width: 101.5%;
-        height: 60px;
-        bottom: 0;
+        height: 62px;
         transition: 500ms;
     }
     & button {
@@ -91,8 +90,8 @@
         align-items: center;
         position: relative;
         z-index: 1;
-        margin-bottom: 2px;
-        margin-left: 3.3px;
+        left: 0.7%;
+        margin-top: 0.6%;
         & img:nth-of-type(1) {
             position: absolute;
             right: 8%;
