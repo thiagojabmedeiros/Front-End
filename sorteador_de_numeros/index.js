@@ -33,38 +33,44 @@ start.addEventListener("input", () => {
 end.addEventListener("input", () => {
     let _value = end.value.replace(/\D+/g, "")
     end.value = _value
-    if (Number(end.value) <= Number(start.value)) {
-        end.value = Number(start.value) + 2
-    } else if (Number(end.value) > 100) {
+    if (Number(end.value) > 100) {
         end.value = 100
+    }
+    else if (Number(end.value) < 1) {
+        end.value = ""
     }
 })
 
-
-// app running
-form.addEventListener("submit", (e) => {
-    e.preventDefault()
-    try {
-        // calling function to execute in a button event
+function changeScreen() {
         removeApp()
         showTextResult()
         showResultNumbers()
         removeButton()
 
+}
+// app running
+form.addEventListener("submit", (e) => {
+    e.preventDefault()
+    try {
+        // calling function to execute in a button event
+
         // conditions to call functions
-        if (Number(quantity.value) === 1) {
+        if (Number(quantity.value) === 1 && Number(start.value) < Number(end.value)) {
+            changeScreen()
             onlyOneRandom()
             setTimeout(() => {
                 addButton()
             }, 5000)
         }
-        else if (Number(quantity.value) === 2) {
+        else if (Number(quantity.value) === 2 && Number(start.value) < Number(end.value)) {
+            changeScreen()
             twoRandoms()
             setTimeout(() => {
                 addButton()
             }, 9000)
         }
-        else if (Number(quantity.value) === 3) {
+        else if (Number(quantity.value) === 3 && Number(start.value) < Number(end.value)) {
+            changeScreen()
             threeRandoms()
             setTimeout(() => {
                 addButton()

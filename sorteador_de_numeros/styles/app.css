@@ -1,6 +1,7 @@
 /* button */
 #appButton {
     position: relative;
+        place-items: center;
     & div {
         opacity: 0;
         background-image: linear-gradient(to right, var(--accent-pink), var(--accent-blue), var(--accent-green), var(--accent-lime), var(--accent-red));
@@ -25,8 +26,7 @@
         place-self: center;
         position: relative;
         z-index: 1;
-        left: 0.75%;
-        margin-top: 0.6%;
+        bottom: -5%;
     }
 }
 /* button transtions */
@@ -62,6 +62,8 @@
 
 #newResultButton {
     display: none;
+    /* align-content: center; */
+    place-items: center;
     position: relative;
     animation-name: appearButton;
     animation-duration: 1s;
@@ -86,21 +88,35 @@
         height: 56px;
         display: flex;
         gap: 8px;
+        bottom: -5%;
         justify-content: center;
         align-items: center;
         position: relative;
         z-index: 1;
-        left: 0.75%;
-        margin-top: 0.6%;
+
         & img:nth-of-type(1) {
             position: absolute;
             right: 8%;
         }
         & img:nth-of-type(2) {
             position: absolute;
-            right: 6.7%;
+            right: 6.83%;
         }
     }  
+}
+@media (width < 1300px) {
+    #appButton {
+        & button {
+            bottom: -4.9%;
+        }
+    }
+    #newResultButton {
+        & button {
+            & img:nth-of-type(2) {
+                right: 6.13%;
+            }
+        }
+    }
 }
 @keyframes appearButton {
     from {
