@@ -47,7 +47,6 @@ form.addEventListener("submit", (e) => {
     e.preventDefault()
     try {
         // calling function to execute in a button event
-        deleteNums()
         removeApp()
         showTextResult()
         showResultNumbers()
@@ -119,7 +118,35 @@ function removeButton() {
 function addButton() {
     newResultButton.style.display = "initial"
 }
-
+const reloadResult = newResultButton.querySelector("button")
+reloadResult.addEventListener("click", () => {
+    try {
+        newResultButton.style.display = "none"
+        showTextResult()
+        deleteNums()
+        setTimeout(() => {
+            if (Number(quantity.value) === 1) {
+                onlyOneRandom()
+                setTimeout(()=> {
+                    newResultButton.style.display = "initial"
+                }, 5000)
+            } else if (Number(quantity.value) === 2) {
+                twoRandoms()
+                setTimeout(() => {
+                    newResultButton.style.display = "initial"
+                }, 9000)
+            } else if (Number(quantity.value) == 3) {
+                threeRandoms()
+                setTimeout(() => {
+                    newResultButton.style.display = "initial"
+                },1300)
+            }
+        }, 1)
+    }
+    catch(e) {
+        console.log(e)
+    }
+})
 // changing numbers text
 const resultRandom = document.querySelectorAll(".resultBox")
 function deleteNums() {
