@@ -3,7 +3,6 @@ const quantity = document.querySelector("#numbers")
 const start = document.getElementById("start")
 const end = document.getElementById("end")
 
-
 // starting values for demostrantion
 quantity.value = 1
 start.value = 1
@@ -206,4 +205,21 @@ function threeRandoms() {
         result3.textContent = randomNumber3
         resultRandom[2].style.display = "flex"
     }, 8000)
+}
+
+const selectRepeat = document.querySelector("#selectRepeat")
+const selectRepeatInput = selectRepeat.querySelector("input")
+function verifyRepeat2() {
+    if (selectRepeatInput.checked) {
+        console.log("cant repeat nums")
+    } else {
+        console.log("can repeat nums")
+    }
+}
+function verifyRepeat3() {
+    if (selectRepeatInput.checked) {
+        console.log("cant repeat nums")
+    } else {
+        console.log("can repeat nums")
+    }
 }
