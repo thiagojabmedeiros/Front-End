@@ -3,20 +3,19 @@
     flex-direction: column;
     align-items: center;
     gap: 4px;
-    border: solid red;
     height: 58px;
-    width: 482px;
+    width: 100%;
 }
 /* result numbers div */
 #resultNumbers {
     display: none;
     gap: 4px;
-    border: solid red;
     height: 100px;
     width: 260px;
     justify-content: center;
-    align-items: center;
     justify-self: center;
+    position: relative;
+    margin-bottom: 50px;
 }
 
 /* box class */
@@ -26,8 +25,9 @@
     border-radius: 28px;
     background-color: var(--content-brand);
     position: absolute;
-    animation-name: boxGrow, boxRotate;
-    animation-duration: 1.5s, 4s;
+    animation-name: boxGrow, boxRotate, boxDesappear;
+    animation-duration: 1.5s, 2s, 1s;
+    animation-delay: 0s, 1.5s, 4s;
     animation-fill-mode: forwards;
 
 }
@@ -38,27 +38,43 @@
         width: 0px;
     }
     to {
-        height: 100px;
-        width: 100px;
+        height: 90px;
+        width: 90px;
     }
 }
 @keyframes boxRotate {
     from {
-        transform: rotate(500deg);
+        transform: rotate(270deg);
     }
     to {
-        transform: rotate(45deg);
+        transform: rotate(0deg);
+    }
+}
+@keyframes boxDesappear {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
     }
 }
 
+
+.resultBox {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+}
 .robotoMonoResult {
     font-size: 0;
-    position: absolute;
     font-family: var(--ff-roboto-mono);
     font-weight: bold;
     line-height: 1.5;
-    animation-name: numberGrow;
-    animation-delay: 1.5s;
+    animation-name: numberGrow, numberColorChange;
+    animation-delay: 1.5s, 4s;
+    animation-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.2);
     animation-duration: 1s;
     animation-fill-mode: forwards;
 }
@@ -71,5 +87,13 @@
     to {
         opacity: 1;
         font-size: 48px;
+    }
+}
+@keyframes numberColorChange {
+    from {
+        color: black;
+    }
+    to {
+        color: var(--content-brand);
     }
 }

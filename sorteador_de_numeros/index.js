@@ -4,11 +4,13 @@ const start = document.getElementById("start")
 const end = document.getElementById("end")
 
 
-
+// starting values for demostrantion
 quantity.value = 1
 start.value = 1
 end.value = 100
 
+
+// creating restrictions for input numbers
 quantity.addEventListener("input", () => {
     let _value = quantity.value.replace(/\D+/g, "")
     quantity.value = _value
@@ -39,28 +41,26 @@ end.addEventListener("input", () => {
     }
 })
 
+
+// app running
 form.addEventListener("submit", (e) => {
     e.preventDefault()
     try {
+        // calling function to execute in a button event
         removeApp()
         showTextResult()
         showResultNumbers()
         changeButtonText()
-        let randomNumber1 = Math.floor(Math.random() * Number(end.value - start.value)) + Number(start.value)
-        let randomNumber2 = Math.floor(Math.random() * Number(end.value - start.value)) + Number(start.value)
-        let randomNumber3 = Math.floor(Math.random() * Number(end.value - start.value)) + Number(start.value)
 
+        // conditions to call functions
         if (Number(quantity.value) === 1) {
-            console.log(randomNumber1)
+            onlyOneRandom()
         }
         else if (Number(quantity.value) === 2) {
-            console.log(randomNumber1)
-            console.log(randomNumber2)
+            twoRandoms()
         }
         else if (Number(quantity.value) === 3) {
-            console.log(randomNumber1)
-            console.log(randomNumber2)
-            console.log(randomNumber3)
+            threeRandoms()
         }
         else {
             return null
@@ -69,6 +69,7 @@ form.addEventListener("submit", (e) => {
         console.log(e)
     }
 })
+
 
 // const that disappear when random number shows
 const inputText = document.querySelector("#inputText")
@@ -81,11 +82,16 @@ function removeApp() {
     inputNums.style.display = "none"
 }
 
+
 // const that appear to show result
 const resultText = document.querySelector("#resultText")
 const resultNumbers = document.querySelector("#resultNumbers")
+let count = 0
 // function to show them
 function showTextResult() {
+    count += 1
+    const pText = resultText.querySelector("p")
+    pText.textContent = `${count}° RESULTADO`
     resultText.style.display = "flex"
 }
 function showResultNumbers() {
@@ -98,4 +104,60 @@ const button = document.querySelector("#appButton button")
 // changing button content
 function changeButtonText() {
     button.innerHTML = `SORTEAR NOVAMENTE <img src="/sorteador_de_numeros/assets/direction.svg" alt="direction">`
+}
+
+// changing numbers text
+const resultRandom = document.querySelectorAll(".resultBox")
+function onlyOneRandom() {
+    // creating variables
+    let randomNumber1 = Math.floor(Math.random() * Number(end.value - start.value)) + Number(start.value)
+    const result1 = resultRandom[0].querySelector("h2")
+
+    // changing html value to our random number
+    result1.textContent = randomNumber1
+
+    // changing display to appear 
+    resultRandom[0].style.display = "flex"
+}
+function twoRandoms() {
+    // creating variables
+    let randomNumber1 = Math.floor(Math.random() * (Number(end.value - start.value))) + Number(start.value)
+    let randomNumber2 = Math.floor(Math.random() * (Number(end.value - start.value))) + Number(start.value)
+    const result1 = resultRandom[0].querySelector("h2")
+    const result2 = resultRandom[1].querySelector("h2")
+
+    // returns the first value
+    result1.textContent = randomNumber1
+    resultRandom[0].style.display = "flex"
+
+    // returns the second value with a delay
+    setTimeout(() => {
+        result2.textContent = randomNumber2
+        resultRandom[1].style.display = "flex"
+    }, 4000)
+}
+function threeRandoms() {
+    // creating variables
+    let randomNumber1 = Math.floor(Math.random() * Number(end.value - start.value)) + Number(start.value)
+    let randomNumber2 = Math.floor(Math.random() * Number(end.value - start.value)) + Number(start.value)
+    let randomNumber3 = Math.floor(Math.random() * Number(end.value - start.value)) + Number(start.value)
+    const result1 = resultRandom[0].querySelector("h2")
+    const result2 = resultRandom[1].querySelector("h2")
+    const result3 = resultRandom[2].querySelector("h2")
+    
+    // receiving first value
+    result1.textContent = randomNumber1
+    resultRandom[0].style.display = "flex"
+
+    // receiving second value
+    setTimeout(() => {
+        result2.textContent = randomNumber2
+        resultRandom[1].style.display = "flex"
+    }, 4000)
+
+    // receiving third value
+    setTimeout(() => {
+        result3.textContent = randomNumber3
+        resultRandom[2].style.display = "flex"
+    }, 8000)
 }

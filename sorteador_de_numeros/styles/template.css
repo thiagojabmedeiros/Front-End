@@ -60,7 +60,6 @@ section {
     width: 482px;
     margin-left: auto;
     margin-block: auto;
-    border: blue solid;
 }
 #appForm {
     display: grid;
