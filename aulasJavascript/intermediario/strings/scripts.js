@@ -6,7 +6,7 @@ form.addEventListener("submit", (e) => {
     e.preventDefault()
     const newName = input.value
     input.value = ""
-    creatingId(newName)
+    creatingIdValue(newName)
 })
 
 function creatingIdValue(name) {
@@ -17,7 +17,7 @@ function creatingIdValue(name) {
            nameId += `${(splitNameId[i][0]).toLowerCase() + splitNameId[i].slice(1, splitNameId[i].length)}`
         }
         else {
-            nameId += `${splitNameId[i][0].toUpperCase() + splitNameId[i].slice(1, splitNameId[i].length)}`
+            nameId += `${splitNameId[i][0].toUpperCase() + splitNameId[i].slice(1, splitNameId[i].length).toLowerCase()}`
         }
     }
     console.log(nameId)

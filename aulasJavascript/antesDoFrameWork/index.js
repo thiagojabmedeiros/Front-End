@@ -1,5 +1,6 @@
+"use strict" 
 function userName() {
-    "use strict" /*
+    /*
     it does not allow errors like and many others:
     variableName = value
     */ 
@@ -83,14 +84,13 @@ function nums(a, ...rest) {
 }
 nums(12,1,2,3,4,5)
 
-"use strict"
 let twoObjects = [
-    user1 = {
+    {
         name: "thiago",
         sex: "male",
         age: 22
     },
-    user2 = {
+    {
         name: "larissa",
         sex: "female",
         age: 23
@@ -99,4 +99,53 @@ let twoObjects = [
 // normal array
 console.log(twoObjects)
 // spread operator
-console.log(...twoObjects)
+console.log(...twoObjects) 
+
+// array methods
+/*
+.map((e) => condition)
+.filter((e) => condition)
+.findIndex((e) => condition)
+.find((e) => condition)
+.every((e) => condition)
+.some((e) => condition)
+.reduce((e) => condition)
+*/
+let i = 0
+let productsArr = ["macbook", "web", "iphone", "iwatch", "web", "html", "apple", "c++", "web"]
+
+// map run through the array and return the value
+productsArr.map((e) => {
+    console.log(`${i}: ${e}`)
+    i += 1
+})
+
+// filter() returns an array according to the condition
+const product3 = productsArr.filter((e) => e.length > 3)
+console.log(product3)
+
+// if the element is in array returns its index otherwise returns -1 
+console.log(productsArr.findIndex((e) => e === "apple"))
+console.log(productsArr.findIndex((e) => e === "banana"))
+
+// return the value if it is index else return undefined
+console.log(productsArr.find((e) => e === "banana"))
+
+// return a boolean if every item has the condition 
+console.log(productsArr.every((value) => value.length >= 4))
+
+// return true if at least one item has the condition
+console.log(productsArr.some((value) => value.length >= 4))
+
+// reduce method reduces an array to one value
+let numx = [1,2,3,4,5,6,7,8,9,10]
+let resultx = numx.reduce((acumulator, currentValue, index) =>{
+    // console.log(`acumulator: ${acumulator}`)
+    // console.log(`currentValue: ${currentValue}`)
+    // console.log(`index: ${index}`)
+    // console.log(`sum: ${acumulator + currentValue}`)
+    // console.log("######")
+    return acumulator + currentValue
+},0)
+
+console.log(resultx)
