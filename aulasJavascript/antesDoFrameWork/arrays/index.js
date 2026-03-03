@@ -8,7 +8,7 @@ function userName() {
     const firstName = "thiago"
     const lastName = "medeiros"
     return firstName + " " + lastName
-}
+} 
 
 const uname = userName()
 console.log(uname)
