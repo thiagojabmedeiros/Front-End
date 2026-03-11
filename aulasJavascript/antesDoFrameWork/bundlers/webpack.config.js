@@ -8,6 +8,13 @@ module.exports = {
         path: path.resolve(__dirname, "dist")
     },
     mode: "development",
+    devServer: {
+        static: {
+            directory: path.join(__dirname, "dist", "index.html"),
+        },
+        port: 3333,
+        open: true,
+    },
     plugins: [new HtmlWebpackPlugin()],
     module: {
         rules: [
@@ -16,6 +23,17 @@ module.exports = {
                 use: ["style-loader", "css-loader"],
                 exclude: "/node_modules"
             },
+            {
+                test: /\.(?:js|mjs|cjs)$/,
+                exclude: /node_modules/,
+                use: {
+                    loader: 'babel-loader',
+                    options: {
+                    targets: "defaults",
+                    presets: [['@babel/preset-env']]
+                    }
+                }
+            }
         ],
     },
 }
