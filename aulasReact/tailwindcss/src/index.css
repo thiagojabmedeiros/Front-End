@@ -1,1 +1,6 @@
 @import "tailwindcss";
+
+@theme {
+    --color-red-100: #ffffff;
+    --color-dracula: #123343;
+}
