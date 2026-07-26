@@ -11,16 +11,15 @@ function Button() {
         }
     }, [darkTheme])
 
-    const [estados, setEstado] = useState("desligado")
+    const [estados, setEstado] = useState("ligado")
     function mudarEstado() {
         if (estados === "desligado") {
             setEstado("ligado")
-            setDarktheme(!darkTheme)
         }
         else if (estados === "ligado") {
             setEstado("desligado")
-            setDarktheme(!darkTheme)
         }
+        setDarktheme(!darkTheme)
     }
 
     return <button className="h-fit w-fit border-2 border-blue-700 text-2xl text-red-950 cursor-pointer" onClick={() => mudarEstado()}>
