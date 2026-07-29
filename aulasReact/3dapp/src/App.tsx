@@ -1,54 +1,69 @@
-import { Canvas, useFrame, useLoader } from "@react-three/fiber";
+import { Canvas, useLoader } from "@react-three/fiber";
 import { GLTFLoader } from "three/examples/jsm/Addons.js";
-import { useRef, useState } from "react";
-import * as THREE from "three";
-import { Environment } from "@react-three/drei";
+import {
+  Environment,
+  OrbitControls,
+  Html,
+} from "@react-three/drei";
+
+import Teste from "./componente/Teste";
 
 function Computer() {
   const result = useLoader(GLTFLoader, "/computer.glb");
 
-  const ref = useRef<THREE.Mesh>(null);
-  const [hovered, setHovered] = useState(false);
-
-  useFrame((_, delta) => {
-    if (!ref.current) return;
-
-    ref.current.rotation.y = THREE.MathUtils.lerp(
-      ref.current.rotation.y,
-      hovered ? 0.3 : 0,
-      delta * 5
-    );
-
-    ref.current.rotation.x = THREE.MathUtils.lerp(
-      ref.current.rotation.x,
-      hovered ? -0.08 : 0,
-      delta * 5
-    );
-  });
-
   return (
-    <primitive
-      ref={ref}
-      position={[0,0,-3]}
-      scale={2.5}
-      object={result.scene}
-      onPointerOver={() => setHovered(true)}
-      onPointerOut={() => setHovered(false)}
-    />
+    <group position={[0, -1, 0]}>
+      <primitive object={result.scene} />
+
+      {/* Tela do computador */}
+      <Html
+        transform
+        occlude
+        position={[0.018, 0.767, -0.3125]} // Ajuste conforme necessário
+        rotation={[0, 0, 0]}
+        distanceFactor={0.65}
+      >
+        <div
+          style={{
+            width: "1690px",
+            height: "1120px",
+            background: "#ffffff",
+            overflow: "hidden",
+            borderRadius: "10px",
+          }}
+        >
+          <Teste />
+        </div>
+      </Html>
+    </group>
   );
 }
 
 function App() {
   return (
-    <div id="canvas-container">
-      <Canvas camera={{ position: [1.5, 1.5, 5] }}>
+    <div
+      id="canvas-container"
+      style={{
+        width: "100vw",
+        height: "100vh",
+      }}
+    >
+      <Canvas camera={{ position: [1.5, 1, 4]}}>
         <Environment preset="city" />
-        <gridHelper   args={[20, 20]}
-  renderOrder={-1}
-  material-depthWrite={false}/>
-        {/* <ambientLight intensity={0} /> */}
-        <directionalLight position={[0, 0, 1]} intensity={2} />
+
+        <ambientLight intensity={0.8} />
+
+        <directionalLight
+          position={[0, 5, 5]}
+          intensity={2}
+        />
+
         <Computer />
+
+        <OrbitControls
+          // enableZoom={false}
+          enablePan={false}
+        />
       </Canvas>
     </div>
   );

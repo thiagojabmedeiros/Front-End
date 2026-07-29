@@ -4,7 +4,7 @@ Canvas {
 
 #canvas-container {
     height: 400px;
-    width: 400px;
+    width: 100vw;
 }
 
 body {
