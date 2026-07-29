@@ -1,0 +1,17 @@
+Canvas {
+    background-color: #EEEEEE;
+}
+
+#canvas-container {
+    height: 400px;
+    width: 400px;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
