@@ -3,15 +3,46 @@
     padding: 0;
 }
 
-.container {
-    background-color: red;
-    width: 100%;
-    height: 700px;
+.hero {
     position: relative;
-    z-index: 0;
+    z-index: 1;
+    border: solid red;
+    width: 550px;
+    height: 449px;
+    font-family: "archivo";
+    gap: 40px;
+    margin-left: 4rem;
+    display: flex;
+    flex-direction: column;
+}
+.hero > div > h1 {
+    color: #FFFFFF;
+    line-height: 75%;
+    font-size: 100px;
+    font-weight: 700;
+    letter-spacing: -9px;
+}
+
+.hero > p {
+    font-size: 20px;
+    font-weight: 500;
+    color: #9E9E9E;
+}
+
+.container {
+    border: green;
+    height: 610px;
+    background-color: #111111;
+    display: flex;
+    align-items: center;
 }
 
 .fundo3d {
     position: absolute;
-    z-index: -1;
+    right: 0;
+    top: 0;
+    z-index: 0;
+    border: solid red;
+    width: 600px;
+    height: 600px;
 }
