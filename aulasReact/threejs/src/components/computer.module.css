@@ -1,5 +1,12 @@
-.container {
+.screen {
+    display: flex;
+    justify-content: right;
     width: 100vw;
-    height: 400px;
-    background: deeppink;
+    height: 100vh;
+    border: blue solid;
+}
+
+.canva {
+    width: 45%;
+    /* height: 100%; */
 }

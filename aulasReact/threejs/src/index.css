@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: red;
+    width: 100%;
+    height: 700px;
+    position: relative;
+    z-index: 0;
+}
+
+.fundo3d {
+    position: absolute;
+    z-index: -1;
+}
