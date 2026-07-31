@@ -8,7 +8,7 @@ function Computer() {
     return (
         <div className={styles.container}>
             <Canvas>
-                <Environment preset="dawn"/>
+                <Environment preset="warehouse"/>
                 <ComputerModel />
             </Canvas>
         </div>

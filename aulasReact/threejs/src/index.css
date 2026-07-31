@@ -6,12 +6,12 @@
 .hero {
     position: relative;
     z-index: 1;
-    border: solid red;
+    /* border: solid red; */
     width: 550px;
     height: 449px;
     font-family: "archivo";
     gap: 40px;
-    margin-left: 4rem;
+    margin-left: 6rem;
     display: flex;
     flex-direction: column;
 }
@@ -30,19 +30,19 @@
 }
 
 .container {
-    border: green;
-    height: 610px;
+    /* border: green; */
+    height: 710px;
     background-color: #111111;
     display: flex;
     align-items: center;
 }
 
 .fundo3d {
+    width: 700px;
+    height: 700px;
+    /* border: solid red; */
     position: absolute;
     right: 0;
     top: 0;
     z-index: 0;
-    border: solid red;
-    width: 600px;
-    height: 600px;
 }

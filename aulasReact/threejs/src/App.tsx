@@ -1,3 +1,4 @@
+import TypewriterComponent, { TypewriterClass } from "typewriter-effect"
 import Computer from "./components/Computer/Computer"
 
 function App() {
@@ -6,7 +7,7 @@ function App() {
     <div className="container">
       <div className="hero">
         <div>
-          <h1>BACK-END</h1>
+          <h1>SOFTWARE</h1>
           <h1>DEVELOPER</h1>
           <h1>THIAGO M.©</h1>
         </div>
