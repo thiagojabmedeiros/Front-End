@@ -1,48 +1,30 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-
-.hero {
-    position: relative;
-    z-index: 1;
-    /* border: solid red; */
-    width: 550px;
-    height: 449px;
-    font-family: "archivo";
-    gap: 40px;
-    margin-left: 6rem;
-    display: flex;
-    flex-direction: column;
-}
-.hero > div > h1 {
-    color: #FFFFFF;
-    line-height: 75%;
-    font-size: 100px;
-    font-weight: 700;
-    letter-spacing: -9px;
-}
-
-.hero > p {
-    font-size: 20px;
-    font-weight: 500;
-    color: #9E9E9E;
-}
-
 .container {
-    /* border: green; */
-    height: 710px;
-    background-color: #111111;
+    height: 800px;
+    background-color: deeppink;
+    border: solid red 10px;
     display: flex;
     align-items: center;
+    justify-content: center;
+}
+
+.texto2d {
+    position: relative;
+    z-index: 1;
+    width: fit-content;
+    border: solid green;
 }
 
 .fundo3d {
-    width: 700px;
-    height: 700px;
-    /* border: solid red; */
+    height: 39rem;
+    width: 50vw;
+
     position: absolute;
-    right: 0;
     top: 0;
+    right: 0;
     z-index: 0;
 }

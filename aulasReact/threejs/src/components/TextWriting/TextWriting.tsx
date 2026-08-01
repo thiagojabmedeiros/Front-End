@@ -9,13 +9,15 @@ function TextWriting() {
             <TypewriterComponent
             onInit={(typewriter:  TypewriterClass) => {
                 typewriter
-                .typeString("-Olá, Mundo!")
+                .typeString("-Hello, World!")
                 .pauseFor(200)
                 .typeString("<br/>-")
                 .pauseFor(500)
-                .typeString("Este é meu Portifólio Web!")
-                .pauseFor(200)
-                .typeString("<br/>-Aqui eu trabalhei com javascr")
+                .typeString("This is my web portifolio.")
+                .pauseFor(300)
+                .typeString("<br/>-")
+                .pauseFor(600)
+                .typeString("here i have worked with javascr")
                 .pauseFor(600)
                 .deleteChars(7)
                 .pauseFor(500)
@@ -23,7 +25,7 @@ function TextWriting() {
                 .pauseFor(400)
                 .typeString("tailw")
                 .pauseFor(300)
-                .typeString("ind, nextjs e")
+                .typeString("ind, nextjs and")
                 .pauseFor(300)
                 .typeString(" threejs.")
                 .start()
