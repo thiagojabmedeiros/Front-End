@@ -1,17 +1,29 @@
 import { Canvas } from '@react-three/fiber'
 import { Physics, RigidBody, RapierRigidBody } from '@react-three/rapier'
-import { useRef } from 'react'
+import { animated, useSpring } from "@react-spring/three"
+import { useRef, useState } from 'react'
 
 import './App.css'
 import { Environment, OrbitControls } from '@react-three/drei'
 
 function App() {
+  const [hover, setHover] = useState(false)
+  const change = useSpring({
+    rotX: hover ? 1 : 0,
+    config: {
+      mass: 1,
+      tension: 50,
+      friction: 50
+    }
+  })
+
   const ballRef = useRef<RapierRigidBody>(null)
   function kick() {
     if (ballRef.current) {
-      ballRef.current.applyImpulse({x: 0, y: 2, z: -1}, true)
+      ballRef.current.applyImpulse({x: 0, y: 1, z: -0.5}, true)
     }
   }
+
   return (
     <Canvas style={{
       width: "100vw",
@@ -21,15 +33,16 @@ function App() {
       <Environment preset="dawn" />
       <OrbitControls />
       <Physics debug>
-        <RigidBody
+        <RigidBody 
         ref={ballRef} 
         restitution={1.2}
         friction={5}
         >
-          <mesh position={[0,2,0]} onClick={() => kick()}>
+          <animated.mesh rotation-x={change.rotX} onPointerOver={() => setHover(true)} onPointerOut={() => setHover(false)} 
+          position={[0,2,0]} onClick={() => kick()}>
             <boxGeometry args={[0.5,0.5,0.5]}/>
             <meshPhongMaterial color="deeppink" />
-          </mesh>
+          </animated.mesh>
         </RigidBody>
 
         <RigidBody type='fixed' friction={2}>
