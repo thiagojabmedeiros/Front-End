@@ -3,15 +3,15 @@ import { Environment } from "@react-three/drei"
 import ComputerModel from "./ComputerModel"
 
 import { animated, useSpring } from "@react-spring/three"
-import { Suspense, useState } from "react"
+import { useState } from "react"
+
+import { Physics, RigidBody, CuboidCollider } from "@react-three/rapier"
 
 function Computer() {
     const [hover, setHover] = useState(false)
-
     const props = useSpring({
-        rotY: hover ? -0.1 : -0.5,
+        rotY: hover ? -0.15 : -0.5,
         rotX: hover ? 0.1 : 0,
-        scale: hover ? 1.05 : 1,
         config: {
             mass: 1,
             tension: 45, 
@@ -20,21 +20,40 @@ function Computer() {
     })
 
     return (
-        <Canvas>
+        <>
             <Environment preset="warehouse"/>
-            <animated.group
-            scale={props.scale}
-            rotation-y={props.rotY}
-            rotation-x={props.rotX}
-            onPointerOver={() => setHover(true)}
-            onPointerOut={() => setHover(false)}
-            >
-                <Suspense fallback={null}>
-                    <ComputerModel />
-                </Suspense>
-            </animated.group>
-        </Canvas>
+            <Physics>
+                <RigidBody
+                colliders="hull"
+                gravityScale={1}
+                restitution={0.5}
+                >
+                    <animated.group
+                    rotation-y={props.rotY}
+
+                    onPointerOver={() => setHover(true)}
+                    onPointerOut={() => setHover(false)}
+                    >
+                            <ComputerModel />
+                    </animated.group>
+                </RigidBody>
+                <RigidBody 
+                position={[0,-1.5,0]}
+                rotation={[0.2,0,0.15]}
+                type="fixed">
+                    <CuboidCollider args={[4,0.1,4]}/>
+                </RigidBody>
+            </Physics>
+        </>
     )
 }
 
-export default Computer
+
+function Scene() {
+    return (
+        <Canvas camera={{fov: 45, position: [0,1,8]}}>
+            <Computer />
+        </Canvas>
+    )
+}
+export default Scene

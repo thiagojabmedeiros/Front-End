@@ -1,5 +1,5 @@
-import { Suspense } from "react"
-import Computer from "./components/Computer/Computer"
+
+import Scene from "./components/Computer/Computer"
 
 function App() {
 
@@ -11,7 +11,7 @@ function App() {
       </div>
 
       <div className="fundo3d">
-          <Computer />
+          <Scene />
       </div>
     </div>
   )
